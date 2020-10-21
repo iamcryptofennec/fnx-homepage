@@ -52,11 +52,8 @@ export default function Navbar() {
                 <Link href="https://liquidity.finnexus.io/">
                   <a  target="_blank" className="navbar-item">FNX Mining</a>
                 </Link>  
-                <Link href="https://options-v2-testnet.vercel.app/#/">
-                  <a  target="_blank" className="navbar-item">FPO v1.0</a>
-                </Link>
-                <Link href="https://options.finnexus.io/#/">
-                  <a  target="_blank" className="navbar-item">FPO v0.1</a>
+                <Link href="https://options.finnexus.io//">
+                  <a  target="_blank" className="navbar-item">FinNexus Options</a>
                 </Link>
                 <Link href="https://wandora.finnexus.app/#/">
                   <a  target="_blank" className="navbar-item">Wandora Box</a>

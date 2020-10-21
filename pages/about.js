@@ -3,6 +3,7 @@ import Section_1 from '../components/Section_1'
 import TeamMember from '../components/TeamMember'
 import PartnerCarousel from '../components/PartnerCarousel'
 import ExchangesCarousel from '../components/ExchangesCarousel'
+import Link from 'next/link'
 
 
 
@@ -11,7 +12,7 @@ export default function Home() {
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
-          <Section_1>
+          <Section_1 background_color="#224099">
             <div className="main-contents">
               <div className="main_text_container">
                 <h1 className="main-title">
@@ -27,7 +28,7 @@ export default function Home() {
           </Section_1>
       
           
-          <div className="team-section">
+          <div id="team" className="team-section">
             <div className="team-size-restrictor">
             
             <div className="team core-team">
@@ -35,11 +36,13 @@ export default function Home() {
                 <h3 className="team-title">Meet the Team</h3>
               </div>
             <div className="team-member-container">
-              <TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" />
-              <TeamMember delay="100" name="Bob Chen" title="Co-founder & CTO" image="BobChen.png" />
-              <TeamMember delay="200" name="Ryan Tian" title="Financial Specialist" image="RyanTian.png" />
-              <TeamMember delay="300" name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" />
-              <TeamMember delay="400" name="Jack Tung" title="Legal Expert" image="JackTung.png" />
+              <a target="_blank" href="https://www.linkedin.com/in/boris-yang-371297199/"><TeamMember name="Boris Yang" title="Founder & CEO" image="BorisYang.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/%E9%9B%A8-%E7%94%B0-375a7127/"><TeamMember delay="100" name="Ryan Tian" title="Financial Specialist" image="RyanTian.png"/></a>
+              <a target="_blank" href=" https://www.linkedin.com/in/%E5%BB%BA%E5%BC%BA-%E5%90%95-4400b5168/"><TeamMember delay="200" name="Lü Jianqiang" title="CTO" image="lu_jianqiang.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/qinggang-jia-074757131"><TeamMember delay="300" name="Jia Qinggang" title="Senior Developer" image="jia_qinggang.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/%E7%8F%8A%E7%8F%8A-%E9%BB%84-80b6291b9"><TeamMember delay="400" name="Sarah Huang" title="Chief Community Manager" image="sarah_huang.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/sardar-veerender-singh-6325a7119/"><TeamMember delay="500" name="Veerender Singh" title="Community Manager" image="VeerenderSingh.png" /></a>
+              {/* <a target="_blank" href="http://linkedin.com/in/jacky-wang-776458173"><TeamMember delay="600" name="Wang Jie" title="CMO" image="wang_jie.png" /></a> */}
               </div>
             </div>
            
@@ -48,10 +51,13 @@ export default function Home() {
                 <h3 className="section-header em-3 team-title">Advisory Group</h3>
               </div>
               <div className="team-member-container">
-                <TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" />
-                <TeamMember delay="100" name="Noah Maizels" title="Marketing Adviser" image="NoahMaizels.png" />
-                <TeamMember delay="200" name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" />
-                <TeamMember delay="300" name="Jack Lu" title="Wanchain Founder" image="JackLu.png" />
+              <a target="_blank" href="https://www.linkedin.com/in/nicholaskrapels/"><TeamMember name="Nicholas Krapels" title="Strategy Advisor" image="NicholasKrapels.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/noah-maizels/"><TeamMember delay="100" name="Noah Maizels" title="Marketing & Web Dev" image="NoahMaizels.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/%E7%BF%8A%E9%92%A6-%E5%BC%A0-7b81521ba/"><TeamMember delay="200" name="Eason Zhang" title="FP of River Capital" image="EasonZhang.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/jack-lu-57995469/"><TeamMember delay="300" name="Jack Lu" title="Wanchain Founder" image="JackLu.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/joewong1/"><TeamMember delay="400" name="Joe Wong" title="Growth Advisor" image="joe_wong.png" /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/a1choi"><TeamMember delay="500" name="Aaron Choi" title="BD Advisor" image="aaron_choi.png" /></a>
+           
               </div>
             
             </div>

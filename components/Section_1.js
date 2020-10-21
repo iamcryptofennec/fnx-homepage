@@ -36,7 +36,7 @@ export default function Section_1(props) {
           @media (min-width: 1700px) {
             .section_1 {
               border-radius: 0 0 200px 200px;
-              background-color: #224099;
+              background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
               margin-bottom: 200px;
@@ -53,7 +53,7 @@ export default function Section_1(props) {
             
             .section_1 {
               border-radius: 0 0 200px 200px;
-              background-color: #224099;
+              background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
               margin-bottom: 60px;
@@ -71,7 +71,7 @@ export default function Section_1(props) {
             .section_1 {
               height: 500px;
               border-radius: 0 0 100px 100px;
-              background-color: #224099;
+              background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
               width: 100%;
@@ -89,7 +89,7 @@ export default function Section_1(props) {
             .section_1 {
               height: 580px;
               border-radius: 0 0 70px 70px;
-              background-color: #224099;
+              background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
               width: 100%;

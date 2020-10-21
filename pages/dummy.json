@@ -1,0 +1,148 @@
+{
+  "_id": "5f89060262da7a00178f3d3b",
+  "ethCurrentTotalSupply": {
+    "name": "ethCurrentTotalSupply",
+    "description": "Current total supply of FNX on Ethereum",
+    "units": "FNX",
+    "value": 10068062,
+    "formattedValue": "10,068,062.00",
+    "block": 11064208,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "wanCurrentTotalSupply": {
+    "name": "wanCurrentTotalSupply",
+    "description": "Current total supply of FNX on Wanchain",
+    "units": "FNX",
+    "value": 359351624.34,
+    "formattedValue": "359,351,624.34",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "maxAmount": {
+    "name": "maxAmount",
+    "description": "Max potential supply of FNX",
+    "units": "FNX",
+    "value": 500000000,
+    "formattedValue": "500,000,000.00",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "minted": {
+    "name": "minted",
+    "description": "FNX Minted",
+    "units": "FNX",
+    "value": 400000000,
+    "formattedValue": "400,000,000.00",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "currentTotalSupply": {
+    "name": "currentTotalSupply",
+    "description": "Current total supply of FNX (minted FNX minus burnt and converted FNX)",
+    "units": "FNX",
+    "value": 369419686.34,
+    "formattedValue": "369,419,686.34",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "opReserves": {
+    "name": "opReserves",
+    "description": "Operational reserves",
+    "units": "FNX",
+    "value": 22340567,
+    "formattedValue": "22,340,567.00",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "teamAndFounders": {
+    "name": "teamAndFounders",
+    "description": "Team and founding investors",
+    "units": "FNX",
+    "value": 25000000,
+    "formattedValue": "25,000,000.00",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "variableIssuance": {
+    "name": "variableIssuance",
+    "description": "Variable issuance pool",
+    "units": "FNX",
+    "value": 297949998.56,
+    "formattedValue": "297,949,998.56",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "communityRewards": {
+    "name": "communityRewards",
+    "description": "Community rewards fund (for liquidity mining and DAO)",
+    "units": "FNX",
+    "value": 297949998.56,
+    "formattedValue": "297,949,998.56",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "institutional": {
+    "name": "institutional",
+    "description": "Institutional investors",
+    "units": "FNX",
+    "value": 6944445,
+    "formattedValue": "6,944,445.00",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "burned": {
+    "name": "burned",
+    "description": "Burnt FNX",
+    "units": "FNX",
+    "value": 2543490.43,
+    "formattedValue": "2,543,490.43",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "converted": {
+    "name": "converted",
+    "description": "FNX converted for UM1S",
+    "units": "FNX",
+    "value": 28036823.23,
+    "formattedValue": "28,036,823.23",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "fnxInCirculation": {
+    "name": "fnxInCirculation",
+    "description": "Currently circulating FNX",
+    "units": "FNX",
+    "value": 17184675.78,
+    "formattedValue": "17,184,675.78",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "lockedFnx": {
+    "name": "lockedFnx",
+    "description": "FNX locked in FPO (FinNexus Protocol for Options) contract",
+    "units": "FNX",
+    "value": 1148502.29,
+    "formattedValue": "1,148,502.29",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "fnxInCirculationDeducted": {
+    "name": "fnxInCirculationDeducted",
+    "description": "FNX in Circulation (deducting the lockeded FNX in FPO)",
+    "units": "FNX",
+    "value": 16036173.49,
+    "formattedValue": "16,036,173.49",
+    "block": 11082043,
+    "timeStamp": "Fri Oct 16 2020 02:31:30 GMT+0000 (Coordinated Universal Time)"
+  },
+  "block": 11082043,
+  "ethCurrentTotalSupplyRaw": 1.0068062e+25,
+  "wanCurrentTotalSupplyRaw": 3.593516243407187e+26,
+  "ethCurrentTotalSupplyRawDecimals": 10068062,
+  "wanCurrentTotalSupplyRawDecimals": 359351624.34,
+  "currentTotalSupplyRaw": 3.6941968634071875e+26,
+  "fnxInCirculationRaw": 1.7184675779689774e+25,
+  "fnxInCirculationRawDecimals": 17184675.78,
+  "currentTotalSupplyRawDecimals": 369419686.34,
+  "timeStamp": 1602815490993
+}

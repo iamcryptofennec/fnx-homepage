@@ -21,12 +21,13 @@ function Carousel() {
     >
  
 
-      <a  className="carousel-cell" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
-      <a className="carousel-cell" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
-      <a  className="carousel-cell" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
-      <a className="carousel-cell" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
-      <a  className="carousel-cell" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
-      <a className="carousel-cell" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
+      <a  className="carousel-cell" target="_blank" href="https://www.bkex.com/"><img src="/bkex.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://www.bitrue.com/"><img src="/bitrue.png"/></a>
+      <a  className="carousel-cell" target="_blank" href="https://bitmax.io/"><img src="/bitmax.png"/></a>
+      
+      <a className="carousel-cell" target="_blank" href="https://www.hoo.com/"><img src="/hoo.png"/></a>
+      <a  className="carousel-cell" target="_blank" href="https://www.jbex.com/"><img src="/jubi.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://uniswap.org/"><img src="/uniswap.png"/></a>
 
 
 

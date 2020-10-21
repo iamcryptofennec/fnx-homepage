@@ -12,7 +12,7 @@ export default function Navbar(props) {
     // switch styles for unsupported browsers
     let browser =""
       useEffect(() => {
-      AOS.init();
+      AOS.init({once: true});
       // check browser
       browser = Bowser.getParser(window.navigator.userAgent);
       let name = browser.getBrowser()

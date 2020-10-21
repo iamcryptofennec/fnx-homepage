@@ -23,16 +23,18 @@ function Carousel() {
     >
  
      
-      <a className="carousel-cell" href="https://www.hillstonepe.co/"><img src="/hillstone.png"/></a> 
-      <a className="carousel-cell" href="https://consensus-lab.com/"><img src="/consensuslab.png"/></a>
-      <a className="carousel-cell" href="https://www.genesis-group.com/"><img src="/genesis.png"/></a>
-  
-      <a className="carousel-cell" href="https://www.hillstonepe.co/"><img src="/hillstone.png"/></a> 
-      <a className="carousel-cell" href="https://consensus-lab.com/"><img src="/consensuslab.png"/></a>
-      <a className="carousel-cell" href="https://www.genesis-group.com/"><img src="/genesis.png"/></a>
-
-
-
+      <a className="carousel-cell" target="_blank" href="https://www.hillstonepe.co/"><img src="/hillstone.png"/></a> 
+      <a className="carousel-cell" target="_blank" href="https://consensus-lab.com/"><img src="/consensuslab.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://www.genesis-group.com/"><img src="/genesis.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://bandprotocol.com/"><img src="/band_protocol.png"/></a> 
+      <a className="carousel-cell" target="_blank" href="https://www.cardinal.vc/"><img src="/cardinal_capital.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://chain.link/"><img src="/chainlink.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://elrond.com/"><img src="/elrond.png"/></a> 
+      <a className="carousel-cell" target="_blank" href="https://kardiachain.io/"><img src="/kardiachain.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://kyros.ventures/"><img src="/kyros_venture.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://trgc.io/"><img src="/trg_capital.png"/></a>
+      <a className="carousel-cell" target="_blank" href="http://wanchain.org/"><img src="/wanchain.png"/></a>
+      <a className="carousel-cell" target="_blank" href="https://www.bkex.vc/"><img src="/bkex_capital.png"/></a>
 
 
       <style jsx>{`

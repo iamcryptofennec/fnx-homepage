@@ -33,7 +33,7 @@ function Carousel() {
       <a className="carousel-cell" target="_blank" href="https://kardiachain.io/"><img src="/kardiachain.png"/></a>
       <a className="carousel-cell" target="_blank" href="https://kyros.ventures/"><img src="/kyros_venture.png"/></a>
       <a className="carousel-cell" target="_blank" href="https://trgc.io/"><img src="/trg_capital.png"/></a>
-      <a className="carousel-cell" target="_blank" href="http://wanchain.org/"><img src="/wanchain.png"/></a>
+      <a className="carousel-cell" target="_blank" href="http://wanchain.org/"><img src="/wanchain_partner.png"/></a>
       <a className="carousel-cell" target="_blank" href="https://www.bkex.vc/"><img src="/bkex_capital.png"/></a>
 
 

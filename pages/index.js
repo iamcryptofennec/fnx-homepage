@@ -30,7 +30,7 @@ export default function Home() {
                 </h1>
                 <h2 className="version">v1.0</h2>
                 <div className="mainContentsText_1">
-                  FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
+                  FinNexus Protocol For Options is an upcoming multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
                 </div>
                 <div className="instructions">Join our email list to get the latest news about FinNexus's upcoming decentralized derivative products.</div>
                <a href="https://finnexus.substack.com/" target="_blank"><button className="is-rounded button sign-up is-danger">Sign-up</button></a> 
@@ -47,12 +47,12 @@ export default function Home() {
 
             </div>
             <div data-aos-duration="500" data-aos-delay="300" data-aos="fade-left" className="section_2_imageAside">
-              <h3 className="section-2-header section-header">Earn Now!</h3>
+              <h3 className="section-2-header section-header">Add Liquidity & Earn!</h3>
               <p className="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
               <div className="float-container section_2_button">
-              <Link href="https://options-v2-testnet.vercel.app/#/">
+              <Link href="https://finnexus.substack.com/">
                 <a  target="_blank">
-                  <button className="is-rounded float-left section-2-button button is-danger">Provide Liquidity</button>
+                  <button className="is-rounded float-left section-2-button button is-danger">Coming Soon!</button>
                 </a>
               </Link>
               </div>
@@ -66,9 +66,9 @@ export default function Home() {
             <div data-aos-duration="500" data-aos-delay="300" data-aos="fade-right" className="section_3_imageAside">
               <h3 className="section-3-header section-header"> Hedge & Leverage</h3>
               <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
-              <Link href="https://options-v2-testnet.vercel.app/#/">
+              <Link href="https://finnexus.substack.com/">
                   <a  target="_blank">
-                    <button className="is-rounded float-left section-2-button button is-danger">Buy FPO Options</button>
+                    <button className="is-rounded float-left section-2-button button is-danger">Coming Soon!</button>
                   </a>
                 </Link>
              </div>

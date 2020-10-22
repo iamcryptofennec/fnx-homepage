@@ -41,9 +41,9 @@ export default function Navbar() {
             <Link href="https://medium.com/finnexus">
               <a className="navbar-item">Blog</a>
             </Link>
-            {/* <Link href="/dashboard">
+            <Link href="/dashboard">
               <a className="navbar-item">Dashboard</a>
-            </Link> */}
+            </Link>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
                 Products
@@ -103,7 +103,7 @@ export default function Navbar() {
       
           @media (min-width: 1700px) {
             .navbar {
-              width: 1200px;
+              width: 1000px;
               margin: auto;
             }
             .navbar-item {
@@ -114,7 +114,7 @@ export default function Navbar() {
           @media (min-width: 1200px) and (max-width: 1700px) {
             
             .navbar {
-              width: 1000px;
+              width: 900px;
               margin: auto;
             }
               

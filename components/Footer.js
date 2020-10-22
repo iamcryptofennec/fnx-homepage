@@ -117,7 +117,7 @@ export default function Footer() {
             font-size: 25px;
             width: 200px;
             line-height: 40px;
-            margin-right: 200px;
+            margin-right: 100px;
            }
           .socials-grid {
             width: 200px;
@@ -133,7 +133,7 @@ export default function Footer() {
                 -ms-flex-align: center;
                     align-items: center;
             height: 80px;
-            margin-left: 200px;
+            margin-left: 100px;
             padding: 50px 0;
           }
           

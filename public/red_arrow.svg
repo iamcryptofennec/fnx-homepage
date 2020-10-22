@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 40 44" style="enable-background:new 0 0 40 44;" xml:space="preserve">
+	 viewBox="0 0 24 12" style="enable-background:new 0 0 24 12;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#CCCCCC;}
-	.st1{fill:#6F2C90;}
+	.st0{fill:#C1272D;}
 </style>
-<ellipse class="st0" cx="19.81" cy="39.5" rx="16.5" ry="4.5"/>
-<polygon class="st1" points="28.55,19.95 28.55,0 11.08,0 11.08,19.95 -0.06,19.95 19.81,35.77 39.69,19.95 "/>
+<polygon class="st0" points="24,0 12,12 0,0 "/>
 </svg>

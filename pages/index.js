@@ -33,7 +33,7 @@ export default function Home() {
                   FinNexus Protocol For Options is an upcoming multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
                 </div>
                 <div className="instructions">Join our mailing list to get notified when mainnet FinNexus Options go live!</div>
-               <a href="https://finnexus.substack.com/" target="_blank"><button className="is-rounded button sign-up is-danger">Sign up</button></a> 
+               <a href="https://finnexus.substack.com/" target="_blank"><button className="is-rounded button sign-up is-danger">Sign-up</button></a> 
                 <img className="section_1_large_bg" src="top_illustration.svg" />
                 
               </div>
@@ -95,7 +95,7 @@ export default function Home() {
           color: #9F66A9;
         }
         .main_text_container {
-          width: 50%; 
+          width: 500px;
         }
         main {
           overflow: visible: 
@@ -154,6 +154,7 @@ export default function Home() {
         .section_3 {
           margin: auto;
           margin-bottom: 80px;
+          margin-top: 50px;
           bottom: 30px;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -231,11 +232,14 @@ export default function Home() {
             bottom: 100px;
           }
           .section_2 {
-            width: 1200px;
+            width: 1000px;
+            margin-top: 200px;
+
           }
           .section_3_img {  
             width: 90%;
             margin-left: 10%;
+
           }
           .version {
             font-size: 30px;
@@ -250,7 +254,7 @@ export default function Home() {
           }
           .mainContents {
             margin: auto;
-            width: 1200px;
+            width: 1000px;
             margin-top: 0px;
           }
           .mainTitle {
@@ -267,8 +271,8 @@ export default function Home() {
           }
           .section_1_large_bg {
             width: 450px;
-            left: 580px;
-            bottom: 300px; 
+            left: 560px;
+            bottom: 320px; 
           }
           .section_3_imageAside {
             width: 50%; 
@@ -278,7 +282,7 @@ export default function Home() {
           } 
           
           .section_3 {
-            width: 1200px;
+            width: 1000px;
            }
           .section-2-text {
             margin: 15px 0;
@@ -338,10 +342,11 @@ export default function Home() {
             font-size: 20px;
             line-height: 24px;
             margin: 20px 0;
+            width: 400px;
           }
           .mainContents {
             margin: auto;
-            width: 1000px;
+            width: 900px;
             margin-top: 40px;
           }
           .mainTitle {
@@ -357,9 +362,9 @@ export default function Home() {
            
           }
           .section_1_large_bg {
-            width: 400px;
-            left: 580px;
-            bottom: 300px; 
+            width: 380px;
+            left: 400px;
+            bottom: 240px; 
           }
           .section_3_imageAside {
             width: 50%; 
@@ -432,6 +437,7 @@ export default function Home() {
             font-size: 20px;
             line-height: 24px;
             margin: 20px 0;
+            width: 340px;
           }
           .mainContents {
             margin: auto;
@@ -448,12 +454,12 @@ export default function Home() {
             font-weight: 400;
             font-style: italic;
             line-height: 17px;
-          
+            width: 340px;
           }
           .section_1_large_bg {
             width: 330px;
-            left: 350px;
-            bottom: 300px; 
+            left: 280px;
+            bottom: 240px; 
           }
           .section_3_imageAside {
             width: 50%; 
@@ -462,10 +468,10 @@ export default function Home() {
             width: 50%; 
           } 
           .section_2 {
-            width: 800px;
+            width: 700px;
           }
           .section_3 {
-            width: 800px;
+            width: 700px;
             margin-top: 50px;
             bottom: 0;
           }

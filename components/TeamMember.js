@@ -40,16 +40,7 @@ export default function Navbar(props) {
 * Browsers: last 4 version
 */
 
- .team-member-container {
-                -webkit-transform: scale(.7, .7);
-                    -ms-transform: scale(.7, .7);
-                        transform: scale(.7, .7);
-              }
-              .team-member-container:hover {
-                -webkit-transform: scale(.8, .8);
-                    -ms-transform: scale(.8, .8);
-                        transform: scale(.8, .8);
-              } 
+  
             .team-member-title {
               position: absolute;
               background-color: #224099;
@@ -58,13 +49,13 @@ export default function Navbar(props) {
               border-top: .6rem solid #224099;
               border-bottom: .6rem solid #224099;
               text-align: center;
-              border-radius: 1.3rem;
+              border-radius: 15px;
               bottom: -20px;
               z-index: 100;
             }
             .team-name {
               text-align: center;
-              margin: auto;
+              margin: 0 auto;
               color: white;
               font-weight: 900;
               line-height: 1.3rem;
@@ -73,7 +64,7 @@ export default function Navbar(props) {
             }
             .team-title {
               text-align: center;
-              margin: auto;
+              margin: 0 auto;
               color: white;
               width: 10rem;
               font-weight: 300;
@@ -96,94 +87,66 @@ export default function Navbar(props) {
             .team-member-container {
               position: relative; 
               width: 175px;
-              height: 200px;
-              margin: 25px 50px;
-              -webkit-transform: scale(1, 1.);
-                  -ms-transform: scale(1, 1);
-                      transform: scale(1, 1);
+              height: 170px;
+              margin: 5px 15px;
+              -webkit-transform: scale(.8, .8.);
+                  -ms-transform: scale(.8, .8);
+                      transform: scale(.8, .8);
               -webkit-transition: -webkit-transform .1s ease-in-out;
               -o-transition: -o-transform .1s ease-in-out;
               transition: transform .1s ease-in-out;
             }
             .team-member-container:hover {
-                -webkit-transform: scale(1.1, 1.1);
-                    -ms-transform: scale(1.1, 1.1);
-                        transform: scale(1.1, 1.1);
+                -webkit-transform: scale(.82, .82);
+                    -ms-transform: scale(.82, .82);
+                        transform: scale(.82, .82);
               }
             
             .team-header-container h3 {
               text-align: center;
             }
 
-            @media (max-width: 1024px) {
+             
+
+            @media (max-width: 800px){
               .team-member-container {
-                -webkit-transform: scale(.7, .7);
-                    -ms-transform: scale(.7, .7);
-                        transform: scale(.7, .7);
-                width: 125px;
-                height: 200px;
-                margin: 40px 50px;
+                margin: 10px 10px;
+                width: 150px;
+              }   
+              .team-member-title {
+                left: 12px;
+                border-radius: 15px;
               }
-              .team-member-container:hover {
-                -webkit-transform: scale(.8, .8);
-                    -ms-transform: scale(.8, .8);
-                        transform: scale(.8, .8);
-              }
-              .team-member-frame {
-                -webkit-transform: scale(1.85, 1.85);
-                    -ms-transform: scale(1.85, 1.85);
-                        transform: scale(1.85, 1.85);
-                top: -4px;
-              }
-              .team-member {
-                -webkit-transform: scale(1.7, 1.7);
-                    -ms-transform: scale(1.7, 1.7);
-                        transform: scale(1.7, 1.7);
+              .team-name {
+                font-size: 14px;
+                width: 7rem;
+                line-height: 14px;
               }
               .team-title {
-                font-size: 18px;
-                width: 210px;
-                line-height: 25px;
-              }
-              .team-member-title {
-                bottom: -60px;
-                right: -50px;
-              }
-              .team-name {
-                width: 210px;
-                line-height: 20px;
-                font-size: 25px;
+                line-height: 14px;
+
+                width: 7rem;
+                font-size: 12px;
               }
             }
-
-            @media (max-width: 700px){
-              
-              .team-member-container:hover {
-                -webkit-transform: scale(.65, .65);
-                    -ms-transform: scale(.65, .65);
-                        transform: scale(.65, .65);
-              } 
-
+            @media (max-width: 650px){
               .team-member-container {
-                -webkit-transform: scale(.6, .6);
-                    -ms-transform: scale(.6, .6);
-                        transform: scale(.6, .6);
-                width: 115px;
-                height: 200px;
-                margin: 0px 15px;
+                margin: 10px 10px;
               }
               .team-member-title {
-                bottom: -60px;
-                right: -55px;;
-                line-height: 25px;
-                -webkit-transform: scale(.95, .95);
-                    -ms-transform: scale(.95, .95);
-                        transform: scale(.95, .95);
+                left: 12px;
+                border-radius: 15px;
               }
               .team-name {
-                width: 210px;
-                line-height: 25px;
-                font-size: 25px;
+                font-size: 14px;
+                width: 7rem;
+                line-height: 14px;
+              }
+              .team-title {
+                line-height: 14px;
+
+                width: 7rem;
+                font-size: 12px;
               }
                
             }

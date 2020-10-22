@@ -39,11 +39,11 @@ export default function Section_1(props) {
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
-              margin-bottom: 200px;
+             
               color: #F1F1F2;
               overflow: hidden;
               height: 500px;  
-              width: 95%;
+              width: 80%;
             }
           
           

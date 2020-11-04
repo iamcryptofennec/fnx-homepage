@@ -90,4 +90,4 @@ The WanSwap team is hard at work getting the project ready to launch as soon as 
 
 Wanswap is a decentralized exchange with automated market making (AMM) modeled after [Uniswap](https://uniswap.org/) & [Sushiswap](https://sushiswap.fi/). WanSwap is built on the Wanchain blockchain and takes advantage of its cross-chain features to enable multi-chain asset trading with trustless native chain withdrawal.
 
-[***Github](https://github.com/wanswap)| [Twitter](https://twitter.com/wanswap) | [Medium](https://medium.com/wanswap)***
+[***Github](https://github.com/wanswap)| [Twitter](https://twitter.com/wanswap) | [Medium](https://medium.com/wanswap)***]

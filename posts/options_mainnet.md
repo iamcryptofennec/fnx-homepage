@@ -8,7 +8,8 @@ date: '2020-11-02'
 
 We highlight important updates before the FinNexus Protocol for Options (FPO) v1.0 opens to the public on the Ethereum mainnet.
 
-The official version of the FinNexus Protocol for Options (FPO) v1.0 hits the Ethereum mainnet on November 4th, 2020, followed shortly by its launch on the Wanchain mainnet. Both versions will be accessible at*** [options.finnexus.io](http://options.finnexus.io). ***It will be the first DApp in the Wanchain ecosystem to deploy the unique “Dual DApp” strategy where, if you have both Wanmask and Metamask installed in your browser, you can interact with both blockchains from the same web page at the same time!
+The official version of the FinNexus Protocol for Options (FPO) v1.0 hits the Ethereum mainnet on November 4th, 2020, followed shortly by its launch on the Wanchain mainnet. Both versions will be accessible at ***[options.finnexus.io](http://options.finnexus.io).*** 
+It will be the first DApp in the Wanchain ecosystem to deploy the unique “Dual DApp” strategy where, if you have both Wanmask and Metamask installed in your browser, you can interact with both blockchains from the same web page at the same time!
 > # Bookmark the [FPO v1.0 official URL](http://options.finnexus.io) now, don’t get scammed!
 
 To use FPO v1.0, you must first move your tokens from FPO WildNet to FPO v1.0. We will release complete instructions about how to do so in the next few days, follow us on [Twitter ](https://twitter.com/fin_nexus)to make sure you don’t miss it.
@@ -22,19 +23,19 @@ The WildNet implementation of FPO uses a single [MASP](https://medium.com/finnex
 
 ### **Reasons for changing to single asset collateral pools:**
 
-1. **It allows users to better control risk — **For each MASP pool, users of the pool are exposed to the volatility risks of the collateral used to create the pool (which included ETH, USDC, & FNX in the previous model). With the new model, each pool has a single collateral type, which allows for users with low risk tolerance to choose low volatility collateral pools like the USDC pool.
+1. **It allows users to better control risk —** For each MASP pool, users of the pool are exposed to the volatility risks of the collateral used to create the pool (which included ETH, USDC, & FNX in the previous model). With the new model, each pool has a single collateral type, which allows for users with low risk tolerance to choose low volatility collateral pools like the USDC pool.
 
-1. **To simplify the liquidity providing process — **With the new model, the type of collateral used to underwrite the options written from the liquidity pool and the asset withdrawn from the pool will be the same. Thus, liquidity providers can provide whatever asset they prefer (USDC or FNX) and know that they will receive that same asset, plus or minus the gains from providing liquidity, when they withdraw.
+1. **To simplify the liquidity providing process —** With the new model, the type of collateral used to underwrite the options written from the liquidity pool and the asset withdrawn from the pool will be the same. Thus, liquidity providers can provide whatever asset they prefer (USDC or FNX) and know that they will receive that same asset, plus or minus the gains from providing liquidity, when they withdraw.
 
-1. **Revamped benefits for FNX token holders — **An individual pool exclusively for FNX collateral is necessary for the FNX ecosystem. It will offer unique opportunities available only for FNX holders to earn returns using their FNX tokens, promoting the long term value of the token.
+1. **Revamped benefits for FNX token holders —** An individual pool exclusively for FNX collateral is necessary for the FNX ecosystem. It will offer unique opportunities available only for FNX holders to earn returns using their FNX tokens, promoting the long term value of the token.
 
 ### NOTES ON NEW MODEL:
 
-1. **Same basic model, but with single collateral pools — **The basic [MASP mechanism](https://medium.com/finnexus/fpo-v1-0-the-universal-options-protocol-is-a-game-changer-fc11f30c4bb4) remains the same, users may still generate multiple synthetic options backed by collateral in the MASP pool, the ***ONLY ***difference is that they now can choose amongst multiple MASP pools, each with a single collateral type, rather than a single MASP pool with multiple collateral types.
+1. **Same basic model, but with single collateral pools —** The basic [MASP mechanism](https://medium.com/finnexus/fpo-v1-0-the-universal-options-protocol-is-a-game-changer-fc11f30c4bb4) remains the same, users may still generate multiple synthetic options backed by collateral in the MASP pool, the ***ONLY*** difference is that they now can choose amongst multiple MASP pools, each with a single collateral type, rather than a single MASP pool with multiple collateral types.
 
 1. **Benefits of the USDC MASP Pool —** The USDC MASP pool takes advantage of USDC’s relatively lower volatility. Due to USDC’s low volatility, the USDC MASP pool’s [MCR](https://www.docs.finnexus.io/terminology/#minimum-collateralization-ratio-mcr) may be set lower than that of a more volatile asset, Which allows for a larger amount of options to be issued with a relatively lower value of collateral.
 
-1. **Benefits of the FNX MASP Pool — **While the FNX pool will generate a lower amount of options than the less volatile USDC pool, it will feature a higher level of rewards for pool users. Higher token lock up will also reduce FNX supply, putting upwards pressure on the token price.
+1. **Benefits of the FNX MASP Pool —** While the FNX pool will generate a lower amount of options than the less volatile USDC pool, it will feature a higher level of rewards for pool users. Higher token lock up will also reduce FNX supply, putting upwards pressure on the token price.
 
 ![](https://cdn-images-1.medium.com/max/3508/0*R9KS5j7LeZGaKBjf.png)
 
@@ -78,6 +79,6 @@ We are especially excited to bring the FinNexus Protocol for Options to its firs
 
 [FinNexus](http://finnexus.io/) is pioneering a cross-chain DeFi protocol for writing options exposure for multiple assets from within a single collateral pool. This groundbreaking Multi-Asset Single Pool (MASP) methodology for decentralized peer-to-pool options platforms enables anyone anywhere to leverage or hedge their positions in a variety of cryptoassets. Currently live on Ethereum and Wanchain, FinNexus intends to bring its blockchain-agnostic FinNexus Protocol for Options (FPO) to Elrond and Kardiachain soon.
 
-[***Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://finnexus.github.io/Pdfs/FinNexus_Whitepaper_en.pdf) | [Telegram](https://t.me/FinNexusOfficial) | [Twitter](https://twitter.com/fin_nexus) | [Linkedin](https://www.linkedin.com/company/finnexus) | [Facebook](https://www.facebook.com/FinNexus)| [Discord](https://discord.com/invite/bCDMHN7)***
+[***Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://finnexus.github.io/Pdfs/FinNexus_Whitepaper_en.pdf) | [Telegram](https://t.me/FinNexusOfficial) | [Twitter](https://twitter.com/fin_nexus) | [Linkedin](https://www.linkedin.com/company/finnexus) | [Facebook](https://www.facebook.com/FinNexus)| [Discord](https://discord.com/invite/bCDMHN7)***]
 
 ![](https://cdn-images-1.medium.com/max/NaN/0*brQygQEAKzJtJ7My.png)

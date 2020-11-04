@@ -31,6 +31,6 @@ Thank you for your support in providing FNX liquidity on Uniswap.
 
 [FinNexus](http://finnexus.io/) is pioneering a cross-chain DeFi protocol for writing options exposure for multiple assets from within a single collateral pool. This groundbreaking Multi-Asset Single Pool (MASP) methodology for decentralized peer-to-pool options platforms enables anyone anywhere to leverage or hedge their positions in a variety of cryptoassets. Currently live on Ethereum and Wanchain, FinNexus intends to bring its blockchain-agnostic FinNexus Protocol for Options (FPO) to Elrond and Kardiachain soon.
 
-[***Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://finnexus.github.io/Pdfs/FinNexus_Whitepaper_en.pdf) | [Telegram](https://t.me/FinNexusOfficial) | [Twitter](https://twitter.com/fin_nexus) | [Linkedin](https://www.linkedin.com/company/finnexus) | [Facebook](https://www.facebook.com/FinNexus)| [Discord](https://discord.com/invite/bCDMHN7)***
+[***Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://finnexus.github.io/Pdfs/FinNexus_Whitepaper_en.pdf) | [Telegram](https://t.me/FinNexusOfficial) | [Twitter](https://twitter.com/fin_nexus) | [Linkedin](https://www.linkedin.com/company/finnexus) | [Facebook](https://www.facebook.com/FinNexus)| [Discord](https://discord.com/invite/bCDMHN7)***]
 
 ![](https://cdn-images-1.medium.com/max/2000/0*JpHnE71unrLRecRt.png)

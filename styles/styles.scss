@@ -21,6 +21,20 @@
   // border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.markdown img {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+ 
+interweave iframe {
+  margin: auto;
+  display: block;
+ 
+}
+
+
+ 
 // Set your brand colors
 $purple: #8a4d76;
 $pink: #fa7c91;

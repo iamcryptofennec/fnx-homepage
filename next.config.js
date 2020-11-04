@@ -13,5 +13,12 @@ module.exports = withStyles({
       includePaths: ["src/styles"], // @import 'variables'; # loads (src/styles/varialbes.scss), you got it..
     },
   },
+  webpack: function(config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
+    return config
+  },
   // ignoreOrder:true for https://github.com/webpack-contrib/mini-css-extract-plugin/issues/250#issuecomment-544898772
 })

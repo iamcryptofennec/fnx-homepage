@@ -32,14 +32,16 @@ export default function Section_1(props) {
             -ms-overflow-style: none;
             scrollbar-width: none;
           }
-      
+
+       
           @media (min-width: 1700px) {
             .section_1 {
-              border-radius: 0 0 200px 200px;
+              border-radius: ${props.is_blog_main ? " 0 0 100px 100px" : "0 0 200px 200px"};
+             
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
-             
+              height: ${props.is_blog_main ? "250px" : "500px"};
               color: #F1F1F2;
               overflow: hidden;
               height: 500px;  
@@ -52,14 +54,14 @@ export default function Section_1(props) {
           @media (min-width: 1200px) and (max-width: 1700px) {
             
             .section_1 {
-              border-radius: 0 0 200px 200px;
+              border-radius: ${props.is_blog_main ? " 0 0 100px 100px" : "0 0 200px 200px"};
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
               margin-bottom: 60px;
               color: #F1F1F2;
               overflow: hidden;
-              height: 500px;  
+              height: ${props.is_blog_main ? "250px" : "500px"};
               width: 95%;
             }
           
@@ -69,7 +71,7 @@ export default function Section_1(props) {
   
           @media (min-width: 700px) and (max-width: 1200px) {
             .section_1 {
-              height: 500px;
+              height: ${props.is_blog_main ? "250px" : "500px"};;
               border-radius: 0 0 100px 100px;
               background-color: ${props.background_color};
               background-size: 100% 800px;
@@ -87,7 +89,7 @@ export default function Section_1(props) {
            
          
             .section_1 {
-              height: 580px;
+              height: ${props.is_blog_main ? "250px" : "580px"};
               border-radius: 0 0 70px 70px;
               background-color: ${props.background_color};
               background-size: 100% 800px;

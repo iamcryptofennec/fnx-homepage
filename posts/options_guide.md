@@ -102,6 +102,6 @@ Let's take a break for now and we will talk more about options in the next FinNe
 
 FinNexus is the open finance protocol built on the [Wanchain](https://www.wanchain.org/) blockchain. It is a hub for connecting different decentralized ledgers to each other and users, and also for connecting with traditional finance applications. The first iteration of FinNexus will be a marketplace for hybrid decentralized/traditional financial products.
 
-[***Telegram](https://t.me/FinNexusOfficial)| [Twitter](https://twitter.com/fin_nexus) | [Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://www.finnexus.io/FinNexus_Whitepaper_en.pdf) | [Facebook](https://www.facebook.com/FinNexus) | [Linkedin](https://www.linkedin.com/company/finnexus)***]
+***Telegram](https://t.me/FinNexusOfficial)| [Twitter](https://twitter.com/fin_nexus) | [Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://www.finnexus.io/FinNexus_Whitepaper_en.pdf) | [Facebook](https://www.facebook.com/FinNexus) | [Linkedin](https://www.linkedin.com/company/finnexus)***
 
 ![](https://cdn-images-1.medium.com/max/2000/0*mGa1WEFjho5-RClP.png)

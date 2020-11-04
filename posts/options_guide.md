@@ -18,7 +18,7 @@ An option is a binding contract that allows you (as the buyer) to sell or buy an
 
 With options, in order to get that right to buy or sell a particular asset at a predetermined price, you have to pay the option seller a price, which is called the **option premium**.
 
-![Photo by [Nathan Hulsey](https://unsplash.com/@nhulz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/apple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://cdn-images-1.medium.com/max/3840/1*wzs4hGPB5gnh45t72iT8MA.jpeg)*Photo by [Nathan Hulsey](https://unsplash.com/@nhulz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/apple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+![](https://cdn-images-1.medium.com/max/3840/1*wzs4hGPB5gnh45t72iT8MA.jpeg) 
 
 For example, a fruit store wants to buy 500 kg of apples from an orchard owner, but the apples are not ripe yet until August. The fruit store worries about the rise of the price, affected by drought this year. Therefore, it reaches an agreement with the orchard owner, that it may purchase the apples at the price of $4/kg in August. But it doesn’t have to do so if there is some cheaper price on the market. In order to have this right, the fruit store pays the orchard owner $100 as compensation.
 
@@ -74,7 +74,7 @@ Owners of **American-style options** may exercise at any time before the option 
 
 The expiration dates may also have a significant influence on the value of the options. In general, the longer an option contract has to expiration, the higher value it will have.
 
-![Volatile markets like bitcoin and cryptocurrency demand means to protect against both upside and downside risk. Options are the answer. Photo by [M. B. M.](https://unsplash.com/@m_b_m?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/stock-options?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).](https://cdn-images-1.medium.com/max/3840/1*2LgK5U7Y4KDh4Xc5GW4u0w.jpeg)*Volatile markets like bitcoin and cryptocurrency demand means to protect against both upside and downside risk. Options are the answer. Photo by [M. B. M.](https://unsplash.com/@m_b_m?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/stock-options?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).*
+![](https://cdn-images-1.medium.com/max/3840/1*2LgK5U7Y4KDh4Xc5GW4u0w.jpeg)
 
 ### 6. Price Volatility
 
@@ -89,7 +89,7 @@ Settlement is the process for the terms of an options contract to be resolved be
 **Physically settled options** require the actual delivery of the underlying assets. When exercising, the holder of physically settled call options would, therefore, buy the underlying assets, whereas the holder of physically settled put options would sell the underlying assets.
 
 **Cash-settled options** do not require the actual delivery of the underlying assets. Instead, the market value, at the exercise date, of the underlier is compared to the strike price, and the difference (if in a favorable direction) is paid by the option seller to the owner.
-![Photo by [George Huffman](https://unsplash.com/@ghuffmanphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/apple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://cdn-images-1.medium.com/max/3840/1*DZ-RjCN9U6uzaAhdCINBzA.jpeg)*Photo by [George Huffman](https://unsplash.com/@ghuffmanphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/apple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+![](https://unsplash.com/s/photos/apple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)](https://cdn-images-1.medium.com/max/3840/1*DZ-RjCN9U6uzaAhdCINBzA.jpeg)
 
 With the apple example above, if the apple price is higher than $4/kg in August, if the options were physically settled options, it would mean that the fruit store purchases the apples at the previously agreed upon price and the orchard owner makes the delivery. If the options were cash settled options, it would mean that the orchard owner pays the difference in cash between the market price and the previously agreed upon price, times the total kilograms covered by the contract, to the fruit store.
 

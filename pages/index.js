@@ -30,10 +30,10 @@ export default function Home() {
                 </h1>
                 <h2 className="version">v1.0</h2>
                 <div className="mainContentsText_1">
-                  FinNexus Protocol For Options is an upcoming multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
+                  FinNexus Protocol For Options (FPO) is an upcoming multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
                 </div>
-                <div className="instructions">The Wildnet whitelist application is open! Apply now to get early access to FinNexus Options!</div>
-               <a href="https://medium.com/finnexus/enter-the-wildnet-on-ethereum-to-win-your-share-of-1-000-000-fnx-tokens-551808d92ba7" target="_blank"><button className="is-rounded button sign-up is-danger">Apply</button></a> 
+                <div className="instructions">Buy BTC put & call options right now on FPO v1.0, or supply liquidity to earn rewards!</div>
+               <a href="https://medium.com/finnexus/enter-the-wildnet-on-ethereum-to-win-your-share-of-1-000-000-fnx-tokens-551808d92ba7" target="_blank"><button className="is-rounded button sign-up is-danger">Try FPO v1.0</button></a> 
                 <img className="section_1_large_bg" src="top_illustration.svg" />
                 
               </div>
@@ -50,10 +50,10 @@ export default function Home() {
               <h3 className="section-2-header section-header">Add Liquidity & Earn!</h3>
               <p className="section-2-text">With FPO v1.0, liquidity providers earn attractive rewards for trustlessly locking their assets in the the MASP liquidity pool.</p>
               <div className="float-container section_2_button">
-              <div className="instructions instructions_2">Apply to the Wildnet whitelist to get early access to FinNexus Options!</div>
+              <div className="instructions instructions_2">Add FNX, USDC, or WAN liquidity to earn!</div>
               <Link href="https://medium.com/finnexus/enter-the-wildnet-on-ethereum-to-win-your-share-of-1-000-000-fnx-tokens-551808d92ba7">
                 <a  target="_blank">
-                  <button className="is-rounded float-left section-2-button button is-danger">Apply</button>
+                  <button className="is-rounded float-left section-2-button button is-danger">Earn Now!</button>
                 </a>
               </Link>
               </div>
@@ -67,10 +67,10 @@ export default function Home() {
             <div data-aos-duration="500" data-aos-delay="300" data-aos="fade-right" className="section_3_imageAside">
               <h3 className="section-3-header section-header"> Hedge & Leverage</h3>
               <p className="section-3-text">FPO's wide variety of options makes it easy to find just the solution for your investment needs, and our MASP liquidity pool ensures you never need to worry if there's enough liquidity.</p>
-              <div className="instructions instructions_2">Apply to the Wildnet whitelist to get early access to FinNexus Options!</div>
+              <div className="instructions instructions_2">Hedge or leverage BTC, ETH, & ERC20 tokens now with FinNexus Protocol for Options!</div>
               <Link href="https://medium.com/finnexus/enter-the-wildnet-on-ethereum-to-win-your-share-of-1-000-000-fnx-tokens-551808d92ba7">
                   <a  target="_blank">
-                    <button className="is-rounded float-left section-2-button button is-danger">Apply</button>
+                    <button className="is-rounded float-left section-2-button button is-danger">Buy Options!</button>
                   </a>
                 </Link>
              </div>

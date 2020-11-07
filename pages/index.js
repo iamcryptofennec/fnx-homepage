@@ -270,9 +270,9 @@ export default function Home() {
              
           }
           .section_1_large_bg {
-            width: 450px;
+            width: 400px;
             left: 560px;
-            bottom: 320px; 
+            bottom: 340px; 
           }
           .section_3_imageAside {
             width: 50%; 
@@ -363,8 +363,8 @@ export default function Home() {
           }
           .section_1_large_bg {
             width: 380px;
-            left: 400px;
-            bottom: 240px; 
+            left: 480px;
+            bottom: 280px; 
           }
           .section_3_imageAside {
             width: 50%; 

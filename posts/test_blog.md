@@ -6,9 +6,9 @@ date: '2020-11-15'
 
 # FinNexus Announces Adjustments to FNX Uniswap Liquidity Mining
 
-FNX daily Uniswap mining rewards will adjust down to 1000 FNX.
+## FNX daily Uniswap mining rewards will adjust down to 1000 FNX.
 
-We introduced our Uniswap Liquidity Mining program during the DeFi Summer. It was a critical part of our token price appreciation during that time. We reached almost $1.5 million in liquidity at its peak. For that, we’d like to thank all of our liquidity providers and FNX token holders for making this program a great success!
+### We introduced our Uniswap Liquidity Mining program during the DeFi Summer. It was a critical part of our token price appreciation during that time. We reached almost $1.5 million in liquidity at its peak. For that, we’d like to thank all of our liquidity providers and FNX token holders for making this program a great success!
 
 We introduced our Uniswap Liquidity Mining Phase 2 [here](https://medium.com/finnexus/migrating-to-uniswap-liquidity-mining-phase-2-15e98a4e7bc2) and we will maintain an FNX/ETH [liquidity pool](https://info.uniswap.org/token/0xef9cd7882c067686691b6ff49e650b43afbbcc6b) for as long as we are building on Ethereum, which we expect to be a long time! As previously announced, however, while the Uniswap Liquidity Mining Phase 2 will continue on indefinitely, we will from time to time revise the mining reward amounts.
 

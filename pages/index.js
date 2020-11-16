@@ -30,7 +30,7 @@ export default function Home() {
                 </h1>
                 <h2 className="version">v1.0</h2>
                 <div className="mainContentsText_1">
-                  FinNexus Protocol For Options (FPO) is an upcoming multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
+                FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
                 </div>
                 <div className="instructions">Buy BTC put & call options right now on FPO v1.0, or supply liquidity to earn rewards!</div>
                <a href="https://options.finnexus.io/#/" target="_blank"><button className="is-rounded button sign-up is-danger">Try FPO v1.0</button></a> 

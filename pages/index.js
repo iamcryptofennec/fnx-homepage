@@ -30,7 +30,7 @@ export default function Home() {
                 </h1>
                 <h2 className="version">v1.0</h2>
                 <div className="mainContentsText_1">
-                FinNexus Options makes it easy to buy and exercise <span className="strong italic">BTC</span>, <span className="strong italic">ETH</span>, <span className="strong italic">LINK</span>, <span className="strong italic">SNX</span>, and <span className="strong italic">MKR</span> options in a <span className="strong italic">secure</span> and <span className="strong italic">decentralized</span> way.
+                FinNexus Options makes it easy to buy and exercise <span className="strong italic">BTC</span>, <span className="strong italic">ETH</span>, <span className="strong italic">LINK</span>, <span className="strong italic">SNX</span>, and <span className="strong italic">MKR</span> options in a <span className="strong italic">secure</span> and <span className="strong italic">decentralized</span> way on Ethereum & Wanchain.
                 <div className="line_spacer"></div>
                 <span className="strong italic">Earning</span> with FinNexus Options is even easier! Simply add <span className="strong italic">FNX</span>, <span className="strong italic">WAN</span>, or <span className="strong italic">USDC</span> to the liquidity pool and begin collecting rewards!
                 <span className="italic"></span>

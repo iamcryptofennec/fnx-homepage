@@ -99,7 +99,7 @@ export default function Home() {
           <div className="organization_grid">
           <a className="org_img_link" target="_blank" href="https://www.hillstonepe.co/"><img className="org_img" src="/hillstone.png"/></a> 
             <a className="org_img_link" target="_blank" href="https://consensus-lab.com/"><img className="org_img" src="/consensuslab.png"/></a>
-            <a className="org_img_link" target="_blank" href="https://www.genesis-group.com/"><img className="org_img" src="/genesis.png"/></a>
+            <a className="org_img_link" target="_blank" href="http://newggc.com/"><img className="org_img" src="/genesis.png"/></a>
             <a className="org_img_link" target="_blank" href="https://bandprotocol.com/"><img className="org_img" src="/band_protocol.png"/></a> 
             <a className="org_img_link" target="_blank" href="https://www.cardinal.vc/"><img className="org_img" src="/cardinal_capital.png"/></a>
             <a className="org_img_link" target="_blank" href="https://chain.link/"><img className="org_img" src="/chainlink.png"/></a>

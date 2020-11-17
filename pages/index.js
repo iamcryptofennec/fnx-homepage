@@ -30,9 +30,12 @@ export default function Home() {
                 </h1>
                 <h2 className="version">v1.0</h2>
                 <div className="mainContentsText_1">
-                FinNexus Protocol For Options is a pioneering multi-blockchain decentralized options protocol based on the innovative MASP (Multi-Asset Single Pool) liquidity model.
+                FinNexus Options makes it easy to buy, sell, and exercise <span className="strong italic">BTC</span>, <span className="strong italic">LINK</span>, <span className="strong italic">SNX</span>, and <span className="strong italic">MKR</span> options in a <span className="strong italic">secure</span> and <span className="strong italic">decentralized</span> way.
+                <div className="line_spacer"></div>
+                <span className="strong italic">Earning</span> with FinNexus Options is even easier! Simply add <span className="strong italic">FNX</span>, <span className="strong italic">WAN</span>, or <span className="strong italic">USDC</span> to the liquidity pool and begin collecting rewards!
+                <span className="italic"></span>
                 </div>
-                <div className="instructions">Buy BTC put & call options right now on FPO v1.0, or supply liquidity to earn rewards!</div>
+                <div className="instructions">(Support for more tokens coming soon!)</div>
                <a href="https://options.finnexus.io/#/" target="_blank"><button className="is-rounded button sign-up is-danger">Try FPO v1.0</button></a> 
                 <img className="section_1_large_bg" src="top_illustration.svg" />
                 
@@ -84,7 +87,10 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-
+          .line_spacer {
+            margin-top: 6px;
+            margin-bottom: 6px;
+          }
           .section_2_img_mobile{
             display: none;
           }
@@ -362,9 +368,9 @@ export default function Home() {
            
           }
           .section_1_large_bg {
-            width: 380px;
-            left: 480px;
-            bottom: 280px; 
+            width: 390px;
+            left: 460px;
+            bottom: 340px; 
           }
           .section_3_imageAside {
             width: 50%; 

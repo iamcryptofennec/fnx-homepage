@@ -40,7 +40,13 @@ export default function Dashboard() {
             <div className="dashboard">
               <div className="columns dashboard_row">
                 <div className="column dashboard_item">
-                  {dashboard_data.wanCurrentTotalSupply.value}
+                <div className="column">
+                  <div className="box">
+                   {dashboard_data.wanCurrentTotalSupply.value}
+                    <div className="test"></div>
+                  </div>
+                </div>
+                
                 </div>
                 <div className="column dashboard_item">
                   {dashboard_data.wanCurrentTotalSupply.value}
@@ -60,7 +66,8 @@ export default function Dashboard() {
       </div>
 
       <style jsx>{`
-        .dashboard_item{
+       
+        .dashboard_item_1{
           text-align: center;
           border-radius: 30px;
           line-height: 200px;

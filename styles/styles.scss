@@ -1,8 +1,9 @@
 @charset "utf-8";
 @import "flickity.min.css";
 
+
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url("https://use.typekit.net/sld7eum.css");
 
 
@@ -17,9 +18,13 @@
     font-style: normal;
    }
 
-.flickity-button {
-  // border: 1px solid rgba(0, 0, 0, 0.1);
-}
+  .italic {
+    font-style: italic;
+  }
+
+  .strong {
+    font-weight: 700;
+  }
 
 .markdown img {
   width: 50%;
@@ -58,16 +63,9 @@ $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$card-radius: 500px !default;
+
 
 // Import only what you need from Bulma
-@import '../node_modules/bulma/sass/utilities/_all.sass';
-@import '../node_modules/bulma/sass/base/_all.sass';
-@import '../node_modules/bulma/sass/elements/button.sass';
-@import '../node_modules/bulma/sass/elements/container.sass';
-@import '../node_modules/bulma/sass/elements/form.sass';
-@import '../node_modules/bulma/sass/elements/title.sass';
-@import '../node_modules/bulma/sass/components/navbar.sass';
-@import '../node_modules/bulma/sass/layout/hero.sass';
-@import '../node_modules/bulma/sass/layout/section.sass';
-@import '../node_modules/bulma/sass/grid/_all.sass';
- 
+@import '../node_modules/bulma/bulma.sass';
+

@@ -25,7 +25,7 @@ function Carousel() {
      
       <a className="carousel-cell" target="_blank" href="https://www.hillstonepe.co/"><img src="/hillstone.png"/></a> 
       <a className="carousel-cell" target="_blank" href="https://consensus-lab.com/"><img src="/consensuslab.png"/></a>
-      <a className="carousel-cell" target="_blank" href="https://www.genesis-group.com/"><img src="/genesis.png"/></a>
+      <a className="carousel-cell" target="_blank" href="http://newggc.com/"><img src="/genesis.png"/></a>
       <a className="carousel-cell" target="_blank" href="https://bandprotocol.com/"><img src="/band_protocol.png"/></a> 
       <a className="carousel-cell" target="_blank" href="https://www.cardinal.vc/"><img src="/cardinal_capital.png"/></a>
       <a className="carousel-cell" target="_blank" href="https://chain.link/"><img src="/chainlink.png"/></a>

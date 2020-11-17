@@ -44,7 +44,7 @@ export default function Section_1(props) {
               height: ${props.is_blog_main ? "250px" : "500px"};
               color: #F1F1F2;
               overflow: hidden;
-              height: 500px;  
+              height: 540px;  
               width: 80%;
             }
           

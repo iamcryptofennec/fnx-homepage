@@ -8,7 +8,7 @@ const Index = props => {
   return (
   
       <section>
-        <Section_1 is_blog_main={true} background_color="#9A5EA4">
+        <Section_1 page="blog_main" background_color="#9A5EA4">
           <div className="mainContents">
             <div className="main_text_container">
               <h1 className="mainTitle">

@@ -49,7 +49,7 @@ export default function Dashboard() {
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
-          <Section_1 background_color="#9A5EA4">
+          <Section_1 page="dashboard" background_color="#9A5EA4">
             <div className="main-contents">
               <div className="main_text_container">
                 <h1 className="main-title">
@@ -86,7 +86,8 @@ export default function Dashboard() {
         .dash_title {
           font-size: 48px;
           font-weight: 700;
-          margin: 30px 0;
+          margin: 30px auto;
+          width: 1200px;
         }
         .dash_grid {
           display: grid;
@@ -99,6 +100,7 @@ export default function Dashboard() {
           width: 100%;
           background-color: pink;
         }
+
         .dashboard_container{
           margin: 50px auto;
           width: 1000px;
@@ -179,6 +181,9 @@ export default function Dashboard() {
            
         
         @media (min-width: 1700px) {
+            .dash_title {
+              width: 1200px;
+            }
             .fnx_circle {
               width: 300px;
               height: 300px;
@@ -223,14 +228,21 @@ export default function Dashboard() {
           
           .dashboard_container{
             margin: 50px auto;
-            width: 900px;
+            width: 1000px;
           }
         }
 
         @media (min-width: 800px) and (max-width: 1200px) {
+          .dash_title {
+            min-width: 770px;
+            width: 80%;
+            margin: 30px auto;
+          }
+          
           .dashboard_container{
             margin: 50 px auto;
-            width: 700px;
+            width: 800px;
+            min-width: 70%;
           }
           .main_text_container {
             width: 400px;
@@ -283,25 +295,47 @@ export default function Dashboard() {
 
        
        @media (max-width: 800px){
+         .main-aside {
+           width: 100%;
+ 
+         }
+          .dash_grid {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            justify-items: center;
+            align-items: center;
+          }
+          .dash_title {
+            max-width: 770px;
+            width: 95%;
+            margin: 30px auto;
+          }
+          .dashboard_container{
+            margin: 50 px auto;
+            width: 95%;
+          }
           .main_text_container {
-            width: 90%;
+            width: 80%;
+            max-width: 400px;
             margin: auto;
-            min-width: 330px;
+            min-width: 260px;
             left: 0;
             top: 0;
+            padding: 0;
           }
           .main-contents {
             display: block;
             line-height: 1.5;
-            width: 100%;
-            margin: auto;            
+            width: 80%;
+            margin: auto;
+                        
           }
           .main-title {
-            line-height: 50px; 
+            line-height: 42px; 
             font-weight: 900;
-            width: 300px;
-            font-size: 40px;
-            margin-top: 50px;
+            width: 90%;
+            font-size: 36px;
+            margin-top: 10px;
             margin-bottom: 20px;
           }
            
@@ -309,14 +343,18 @@ export default function Dashboard() {
             font-size: 18px;
           }
           .section-2-opener {
-            font-size: 30px;
+            font-size: 26px;
             font-weight: 700;
+            line-height: 36px;
+            width: 80%;
           }
           
           .fnx_circle {
-            width: 100px;
+            display: none;
           }
-           
+          .fnx_circle_content {
+            display: none;
+          }
           .instructions {
             font-size: 16px;
           }

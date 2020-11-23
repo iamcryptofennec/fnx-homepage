@@ -85,11 +85,12 @@ export default function Section_1(props) {
            
           }
   
-          @media (max-width: 700px) {
+          @media (max-width: 800px) {
            
          
             .section_1 {
-              height: ${props.is_blog_main ? "250px" : "580px"};
+              height: ${props.page === "blog_main" ? "250px" : "580px"};
+              height: ${props.page === "dashboard" ? "350px" : "580px"};
               border-radius: 0 0 70px 70px;
               background-color: ${props.background_color};
               background-size: 100% 800px;

@@ -9,6 +9,7 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.0",
     "@webdeb/next-styles": "^1.1.0",
     "@zeit/next-sass": "^1.0.1",
     "aos": "^2.3.4",
@@ -21,11 +22,13 @@
     "interweave": "^12.5.0",
     "next": "9.5.3",
     "node-sass": "^4.14.1",
+    "numeral": "^2.0.6",
     "raw-loader": "^4.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-flickity-component": "^3.5.0",
     "react-markdown": "^5.0.2",
+    "react-masonry-component": "^6.2.1",
     "react-particles-js": "^3.3.0",
     "reactstrap": "^8.6.0",
     "save": "^2.4.0",

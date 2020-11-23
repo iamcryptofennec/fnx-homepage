@@ -87,16 +87,16 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-          .line_spacer {
-            margin-top: 6px;
-            margin-bottom: 6px;
-          }
-          .section_2_img_mobile{
-            display: none;
-          }
-          .section_2_img_desktop{
-            display: block;
-          }
+        .line_spacer {
+          margin-top: 6px;
+          margin-bottom: 6px;
+        }
+        .section_2_img_mobile{
+          display: none;
+        }
+        .section_2_img_desktop{
+          display: block;
+        }
         .section-header {
           color: #9F66A9;
         }
@@ -254,8 +254,8 @@ export default function Home() {
           }
            
           .mainContentsText_1 {
-            font-size: 25px;
-            line-height: 29px;
+            font-size: 20px;
+            line-height: 24px;
             margin: 20px 0;
           }
           .mainContents {
@@ -269,7 +269,7 @@ export default function Home() {
             margin-top: 50px;
           }
           .instructions {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 400;
             font-style: italic;
             line-height: 22px;
@@ -292,15 +292,15 @@ export default function Home() {
            }
           .section-2-text {
             margin: 15px 0;
-            font-size: 25px;
+            font-size: 20px;
+            line-height: 24px;
             width: 100%;
-            line-height: 29px;
           }
           .section-3-text {
             margin: 15px 0;
-            font-size: 25px;
+            font-size: 20px;
+            line-height: 24px;
             width: 100%;
-            line-height: 29px;
           }
           .section-2-header {
            font-size: 40px;

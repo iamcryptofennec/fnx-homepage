@@ -1,20 +1,49 @@
 import Footer from '../components/Footer'
+import DashboardItem from '../components/DashboardItem'
 import Section_1 from '../components/Section_1'
 import { useState, useEffect } from 'react'
 import fetch from 'node-fetch'
 import dummy from "./dummy.json"
-
+import numeral from "numeral"
 
 
 
 export default function Dashboard() {
-  const [dashboard_data, set_dashboard_data] = useState(dummy)
+  const [fnx_dashboard_elements, set_dashboard_fnx_elements] = useState([])
+  const [fpo_dashboard_elements, set_dashboard_fpo_elements] = useState([])
+
+  // Set number formatting default
+  numeral.defaultFormat("0,0");
+
+   
+  
 
   useEffect(() => {
      fetch("https://fnx-api.herokuapp.com/api/v1")
      .then(res => res.json())
-     .then(data => set_dashboard_data(data))
-   }, []);
+     .then(data => {
+        const fnx_elements = []
+        const fpo_elements = []
+
+        Object.entries(data).forEach(datum => {
+          const value = Math.round(datum[1].value)
+          const formattedNum = numeral(value).format()
+
+          if (datum[1].name) {
+            const newElement = <DashboardItem name={datum[1].name} description={datum[1].description} value={formattedNum} units={datum[1].units}/>
+            if (datum[1].dapp === "FPO") {
+              fpo_elements.push(newElement)
+            }
+            else if (datum[1].dapp === "N/A") {
+              fnx_elements.push(newElement)
+            }
+          }
+        })
+        console.log(fpo_elements)
+        set_dashboard_fpo_elements(fpo_elements)
+        set_dashboard_fnx_elements(fnx_elements)
+      }) 
+   }, [])
 
   return (
     <div className="appContainer">
@@ -37,25 +66,13 @@ export default function Dashboard() {
             </div>
           </Section_1>
           <div className="dashboard_container">
-            <div className="dashboard">
-              <div className="columns dashboard_row">
-                <div className="column dashboard_item">
-                <div className="column">
-                  <div className="box">
-                   {dashboard_data.wanCurrentTotalSupply.value}
-                    <div className="test"></div>
-                  </div>
-                </div>
-                
-                </div>
-                <div className="column dashboard_item">
-                  {dashboard_data.wanCurrentTotalSupply.value}
-                </div>
-                <div className="column dashboard_item">
-                  {dashboard_data.wanCurrentTotalSupply.value}
-                </div>
-              </div>
-               
+            <h1 className="dash_title">FNX Token</h1>
+            <div className="dash_subsection dash_grid">
+              {fnx_dashboard_elements}
+            </div>
+            <h1 className="dash_title">FinNexus Options</h1>
+            <div className="dash_subsection dash_grid">
+              {fpo_dashboard_elements}
             </div>
           </div>
           
@@ -66,18 +83,25 @@ export default function Dashboard() {
       </div>
 
       <style jsx>{`
-       
-        .dashboard_item_1{
-          text-align: center;
-          border-radius: 30px;
-          line-height: 200px;
-          -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
-          -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
-          box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
-          margin-bottom: 30px;
+        .dash_title {
+          font-size: 48px;
+          font-weight: 700;
+          margin: 30px 0;
+        }
+        .dash_grid {
+          display: grid;
+          grid-template-columns: repeat(3, 33%);
+          justify-items: center;
+          align-items: center;
+        }
+        
+        .full_width {
+          width: 100%;
+          background-color: pink;
         }
         .dashboard_container{
-          margin: auto;
+          margin: 50px auto;
+          width: 1000px;
         }
         .fnx_circle {
           -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
@@ -110,9 +134,6 @@ export default function Dashboard() {
          .sub-section-header {
           color: #9F66A9;   
         }
-    
-         
-         
        
         main {
           width: 100%;
@@ -123,9 +144,7 @@ export default function Dashboard() {
           overflow: hidden
         }      
        
-        .dashboard_container{
-          width: 1200px;
-        }
+      
         .main_text_container {
           padding-left: 30px;
           width: 550px;
@@ -160,17 +179,19 @@ export default function Dashboard() {
            
         
         @media (min-width: 1700px) {
-          .dashboard_container{
-            width: 1200px;
-          }
-          
+            .fnx_circle {
+              width: 300px;
+              height: 300px;
+            }
+            .dashboard_container{
+              margin: 50px auto;
+              width: 1000px;
+            }
           
         }
 
         @media (min-width: 1200px) and (max-width: 1700px) { 
-          .dashboard_container{
-            width: 1200px;
-          }
+         
           .main_text_container {
             padding-left: 30px;
             width: 550px;
@@ -200,13 +221,19 @@ export default function Dashboard() {
             font-weight: 700;
           }
           
-        
-         
+          .dashboard_container{
+            margin: 50px auto;
+            width: 900px;
+          }
         }
 
         @media (min-width: 800px) and (max-width: 1200px) {
-          .main_text_container {
+          .dashboard_container{
+            margin: 50 px auto;
             width: 700px;
+          }
+          .main_text_container {
+            width: 400px;
             margin: 0;
             left: 0;
             top: 0;
@@ -231,11 +258,8 @@ export default function Dashboard() {
             width: 300px;
             font-size: 60px;
             margin-bottom: 20px;
-            
-
           }
          
-          
           .section-2-closer {
             font-size: 22px;
           }
@@ -243,8 +267,18 @@ export default function Dashboard() {
             font-size: 35px;
             font-weight: 700;
           }
-           
-          
+          .fnx_circle {
+            width: 250px;
+            height: 250px;
+            left: 380px;
+            bottom: 250px; 
+          }
+          .fnx_circle_content {
+            width: 200px;
+            height: 200px;
+            font-size: 110px;
+            line-height: 200px;
+          }
        }   
 
        
@@ -279,7 +313,9 @@ export default function Dashboard() {
             font-weight: 700;
           }
           
-          
+          .fnx_circle {
+            width: 100px;
+          }
            
           .instructions {
             font-size: 16px;

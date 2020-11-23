@@ -11,20 +11,21 @@
 
 // Globals
 *, .carousel-cell, .carousel-container, .flickity-viewportm, .flickity-slider {
-    overflow: visible;
-    box-sizing: content-box;
-    font-family: noto-sans-extracondensed, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-   }
+  overflow: visible;
+  box-sizing: content-box;
+  font-family: noto-sans-extracondensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .italic {
-    font-style: italic;
-  }
+ 
+.italic {
+  font-style: italic;
+}
 
-  .strong {
-    font-weight: 700;
-  }
+.strong {
+  font-weight: 700;
+}
 
 .markdown img {
   width: 50%;

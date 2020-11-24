@@ -30,6 +30,9 @@ export default function DashboardItem(props) {
         </div>
       </div>
       <style jsx>{`
+        .dashboard_item {
+          max-height: 120px;
+        }
          .name_container {
            display: flex;
          }

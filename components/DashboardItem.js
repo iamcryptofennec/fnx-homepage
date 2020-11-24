@@ -38,6 +38,7 @@ export default function DashboardItem(props) {
          }
         .tooltip {
           width: 15px;
+          height: 15px;
           margin-left: 5px;
         }
         .name {

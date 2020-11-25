@@ -30,6 +30,9 @@ export default function DashboardItem(props) {
         </div>
       </div>
       <style jsx>{`
+        .name {
+          letter-spacing: 0px;
+        }
         .dashboard_item {
           max-height: 120px;
         }
@@ -37,8 +40,8 @@ export default function DashboardItem(props) {
            display: flex;
          }
         .tooltip {
-          width: 15px;
-          height: 15px;
+          width: 18px;
+          height: 18px;
           margin-left: 5px;
         }
         .name {
@@ -90,12 +93,14 @@ export default function DashboardItem(props) {
        }    
        @media (max-width: 800px){
           .dashboard_item_container {
-            width: 80%;
-            min-width: 150px;
+            width: 95%;
+            min-width: 160px;
+
+            max-width: 250px;
+
           } 
           .dashboard_item {
-            width: 80%;
-
+            width: 97%;
             min-width: 150px;
           }
 

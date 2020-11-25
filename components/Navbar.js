@@ -29,11 +29,11 @@ export default function Navbar() {
           <div className="navbar-end">
           
 
-            <Link href="/">
+            {/* <Link href="/">
               <a className="navbar-item">Home</a>
-            </Link>
+            </Link> */}
             <Link href="https://www.docs.finnexus.io/">
-              <a  target="_blank" className="navbar-item">Documentation</a>
+              <a  target="_blank" className="navbar-item">Docs</a>
             </Link>  
             <Link href="about">
               <a className="navbar-item">About</a>
@@ -44,6 +44,23 @@ export default function Navbar() {
             <Link href="https://www.fnx.finnexus.io/">
               <a className="navbar-item">Dashboard</a>
             </Link>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">
+                Governance
+              </a>
+              <div className="navbar-dropdown">
+                <Link href="https://forum.finnexus.io/">
+                  <a  target="_blank" className="navbar-item">Forum</a>
+                </Link>  
+                <Link href="https://snapshot.page/#/finnexus">
+                  <a  target="_blank" className="navbar-item">Snapshot (Ethereum)</a>
+                </Link>
+                {/* <Link href="https://snapshot.page/#/finnexus">
+                  <a  target="_blank" className="navbar-item">Snapshot (Wanchain)</a>
+                </Link> */}
+           
+              </div>
+            </div>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
                 Products

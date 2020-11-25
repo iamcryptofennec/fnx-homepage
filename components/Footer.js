@@ -31,6 +31,9 @@ export default function Footer() {
             <a className="social-link wechat">
               <img className="social-logo" src="/wechat.svg" alt="social-logo" />
             </a>
+            <a className="social-link" href="https://github.com/FinNexus">
+              <img className="social-logo" src="/github.svg" alt="social-logo" />
+            </a>
             <a className="social-link" href="mailto:info@finnexus.io">
               <img className="social-logo" src="/email.svg" alt="social-logo" />
             </a>

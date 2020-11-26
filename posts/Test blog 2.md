@@ -3,7 +3,6 @@ title: Test Blog
 author: 'Test user'
 date: '2020-11-25'
 --- 
-copy to clipboard history
 
 ## FNX Tokenomics Update
 

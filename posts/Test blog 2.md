@@ -1,5 +1,5 @@
 ---
-title: Test Blog 2
+title: Test Blog 2b
 author: 'Test user'
 date: '2020-11-25'
 --- 

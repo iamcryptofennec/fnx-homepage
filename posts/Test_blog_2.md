@@ -1,5 +1,5 @@
 ---
-title: XYZ Title
+title: No Spaces
 author: 'Noah Maizels'
 date: '2020-10-28'
 --- 

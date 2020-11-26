@@ -1,3 +1,8 @@
+---
+title:  FNX Tokenomics Update
+author: 'Noah Maizels'
+date: '2020-8-25'
+--- 
 
 ## FNX Tokenomics Update
 

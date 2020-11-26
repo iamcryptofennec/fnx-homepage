@@ -1,6 +1,6 @@
 ---
 title:  FNX Tokenomics Update
-author: 'Noah Maizels'
+author: 'FinNexus Foundation'
 date: '2020-8-25'
 --- 
 
@@ -82,7 +82,7 @@ If you have any suggestions, please feel free to join our community for further 
 
 [FinNexus](http://finnexus.io/) is building a suite of open finance protocol clusters that will power hybrid marketplaces trading both decentralized and traditional financial products. The headline product to be released is a fully decentralized bitcoin (and other cryptocurrencies) options model that will live on both [Wanchain](https://www.wanchain.org/) and Ethereum.
 
-[***Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://finnexus.github.io/Pdfs/FinNexus_Whitepaper_en.pdf) | [Telegram](https://t.me/FinNexusOfficial) | [Twitter](https://twitter.com/fin_nexus) | [Linkedin](https://www.linkedin.com/company/finnexus) | [Facebook](https://www.facebook.com/FinNexus) | [Discord](https://discord.com/invite/bCDMHN7)***
+[Newsletter](https://mailchi.mp/9c15712d2bbf/finnexus-newsletter) | [Whitepaper](https://finnexus.github.io/Pdfs/FinNexus_Whitepaper_en.pdf) | [Telegram](https://t.me/FinNexusOfficial) | [Twitter](https://twitter.com/fin_nexus) | [Linkedin](https://www.linkedin.com/company/finnexus) | [Facebook](https://www.facebook.com/FinNexus) | [Discord](https://discord.com/invite/bCDMHN7)
 
 
 

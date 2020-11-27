@@ -115,7 +115,7 @@ export default function Dashboard() {
             <div className="dash_subsection dash_grid">
               {fpo_dashboard_elements}
             </div>
-            <h1 className="dash_title">Links & Addresses</h1>
+            <h1 className="dash_title small_title">Links & Addresses</h1>
             <div className="dash_subsection">
             <div class="table-container">
               <table class="table is-striped  is-hoverable is-bordered is-fullwidth">
@@ -177,6 +177,9 @@ export default function Dashboard() {
           font-weight: 700;
           margin: 30px auto;
           width: 1200px;
+        }
+        .small_title {
+          font-size: 32px;
         }
         .dash_grid {
           display: grid;

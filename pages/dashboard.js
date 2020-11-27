@@ -144,7 +144,7 @@ export default function Dashboard() {
                     <td><a href="https://etherscan.io/token/0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B" target="_blank">Link</a></td>
                   </tr>
                   <tr>
-                    <th>FNX WRC20→ERC20 lockup address on Wanchain</th>
+                    <th>FNX WRC20 → ERC20 lockup address on Wanchain</th>
                     <td><span data-clipboard-text="0xe6b46d267aD4fcD37DA71530E0fAf46EbE57f048" className="copy">0xe6b46d267aD4fcD37DA71530E0fAf46EbE57f048 <img className="copyImage" src="copy.svg"></img></span></td>
                     <td><a href="https://www.wanscan.org/address/0xe6b46d267aD4fcD37DA71530E0fAf46EbE57f048" target="_blank">Link</a></td>
                   </tr>

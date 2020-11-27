@@ -3,8 +3,10 @@ import DashboardItem from '../components/DashboardItem'
 import Section_1 from '../components/Section_1'
 import { useState, useEffect } from 'react'
 import fetch from 'node-fetch'
-import dummy from "./dummy.json"
+import clipboard from "clipboard"
 import numeral from "numeral"
+
+
 
 let includedItems = [
   'fpoTvl',
@@ -81,7 +83,8 @@ export default function Dashboard() {
         set_dashboard_fpo_elements(fpo_elements)
         set_dashboard_fnx_elements(fnx_elements)
       }) 
-   }, [])
+      new clipboard('.copy')
+    }, [])
 
   return (
     <div className="appContainer">
@@ -112,6 +115,44 @@ export default function Dashboard() {
             <div className="dash_subsection dash_grid">
               {fpo_dashboard_elements}
             </div>
+            <h1 className="dash_title">Links & Addresses</h1>
+            <div className="dash_subsection">
+            <div class="table-container">
+              <table class="table is-striped  is-hoverable is-bordered is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Value</th>
+                    <th>Link</th>
+                  </tr>
+                </thead>
+                
+                <tbody>
+                  <tr>
+                    <th>FNX Uniswap Pool</th>
+                    <td><span data-clipboard-text="0x722885cab8be10b27f359fcb225808fe2af07b16" className="copy">0x722885cab8be10b27f359fcb225808fe2af07b16 <img className="copyImage" src="copy.svg"></img></span></td>
+                    <td><a href="https://info.uniswap.org/pair/0x722885cab8be10b27f359fcb225808fe2af07b16" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                    <th>FNX on Wanchain</th>
+                    <td><span data-clipboard-text="0xc6f4465a6A521124c8E3096b62575C157999d361" className="copy">0xc6f4465a6A521124c8E3096b62575C157999d361 <img className="copyImage" src="copy.svg"></img></span></td>
+                    <td><a href="https://www.wanscan.org/token/0xc6f4465a6A521124c8E3096b62575C157999d361" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                    <th>FNX on Ethereum</th>
+                    <td><span data-clipboard-text="0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B" className="copy">0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B <img className="copyImage" src="copy.svg"></img></span></td>
+                    <td><a href="https://etherscan.io/token/0xeF9Cd7882c067686691B6fF49e650b43AFBBCC6B" target="_blank">Link</a></td>
+                  </tr>
+                  <tr>
+                    <th>FNX on Ethereum</th>
+                    <td><span data-clipboard-text="0xe6b46d267aD4fcD37DA71530E0fAf46EbE57f048" className="copy">0xe6b46d267aD4fcD37DA71530E0fAf46EbE57f048 <img className="copyImage" src="copy.svg"></img></span></td>
+                    <td><a href="https://www.wanscan.org/address/0xe6b46d267aD4fcD37DA71530E0fAf46EbE57f048" target="_blank">Link</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+
           </div>
           
           
@@ -121,6 +162,16 @@ export default function Dashboard() {
       </div>
 
       <style jsx>{`
+        .copyImage {
+          width: 15px;
+          height: 15px;
+          margin-left: 5px;
+        }
+        .copy:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          text-decoration-style: dotted;
+        }
         .dash_title {
           font-size: 48px;
           font-weight: 700;

@@ -6,6 +6,23 @@ import fetch from 'node-fetch'
 import dummy from "./dummy.json"
 import numeral from "numeral"
 
+let includedItems = [
+  'fpoTvl',
+  'fpoTvlEth',
+  'fpoTvlWan',
+  'ethCurrentTotalSupply',
+  'wanCurrentTotalSupply',
+  'maxAmount', 
+  'minted', 
+  'currentTotalSupply', 
+  'opReserves', 
+  'teamAndFounders', 
+  'communityRewards', 
+  'institutional',
+  'burned',
+  'fnxCirculatingSupply',
+  'effectiveCirculatingSupply',
+]
 
 
 export default function Dashboard() {
@@ -15,8 +32,6 @@ export default function Dashboard() {
   // Set number formatting default
   numeral.defaultFormat("0,0");
 
-   
-  
 
   useEffect(() => {
      fetch("https://fnx-api.herokuapp.com/api/v1")
@@ -24,22 +39,45 @@ export default function Dashboard() {
      .then(data => {
         const fnx_elements = []
         const fpo_elements = []
-
-        Object.entries(data).forEach(datum => {
-          const value = Math.round(datum[1].value)
+        Object.entries(data).forEach(key_value_arr => {
+          let key = key_value_arr[0]
+          let dash_item = key_value_arr[1]
+          const value = Math.round(dash_item.value)
           const formattedNum = numeral(value).format()
-
-          if (datum[1].name) {
-            const newElement = <DashboardItem name={datum[1].name} description={datum[1].description} value={formattedNum} units={datum[1].units}/>
-            if (datum[1].dapp === "FPO") {
+          
+          if (includedItems.includes(key)) {
+            if (key === "fpoTvlEth") {
+              dash_item.name = "Ethereum TVL"
+            }
+            if (key === "fpoTvlWan") {
+              dash_item.name = "Wanchain TVL"
+            }
+            const newElement = <DashboardItem
+              name={dash_item.name} 
+              description={dash_item.description} 
+              value={formattedNum} units={dash_item.units}
+            />
+            if (dash_item.dapp === "FPO") {
               fpo_elements.push(newElement)
             }
-            else if (datum[1].dapp === "N/A") {
+            else if (dash_item.dapp === "N/A") {
               fnx_elements.push(newElement)
             }
           }
         })
-        console.log(fpo_elements)
+       
+        let totalFnx = data.eth_fnxPoolTotal.value + data.wan_fnxPoolTotal.value
+        let stakeRate = Math.round((totalFnx / data.fnxCirculatingSupply.value) * 1000) /10
+        stakeRate
+        const stakeRateElement = <DashboardItem
+          name={"Staking Rate"} 
+          description={"The percentage of circulating FNX which is locked in FPO"} 
+          value={stakeRate} units={"%"}
+        />
+            
+        fpo_elements.push(stakeRateElement)
+            
+
         set_dashboard_fpo_elements(fpo_elements)
         set_dashboard_fnx_elements(fnx_elements)
       }) 

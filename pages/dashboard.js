@@ -98,7 +98,7 @@ export default function Dashboard() {
                 </h1>
                 <div className="main-aside">
                   <p className="section-2-text"> <em><span className="section-2-opener">The FNX Token Dashboard </span></em>
-                  <span  className="section-2-closer">shows live data about the FNX token.</span> </p>
+                  <span  className="section-2-closer">shows live data about the FNX token and FinNexus Protocol for Options (FPO).</span> </p>
                 </div>
                 <div className="fnx_circle">
                   <div className="fnx_circle_content">FNX</div>

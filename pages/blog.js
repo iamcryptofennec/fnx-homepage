@@ -3,6 +3,7 @@ import BlogList from '../components/BlogList'
 import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import { getPosts } from '../api/posts';
 
 const Index = props => {
   return (
@@ -15,14 +16,23 @@ const Index = props => {
                 Welcome to the Official FinNexus Blog
               </h1>
               <div className="mainContentsText_1">
-               
+              <ul>
+              {props.posts.map(post => (
+                <li key={post.id}>
+                  <Link href={`blog/[slug]`} as={`blog/${post.slug}`}>
+                    <a>{post.title}</a>
+                  </Link>
+                </li>
+              ))}
+ 
+  </ul>
               </div>
             </div>
           </div>
         </Section_1>
-        <div className="blog_list_container">
+        {/* <div className="blog_list_container">
           <BlogList allBlogs={props.allBlogs} />
-        </div>
+        </div> */}
           
         <Footer>
           
@@ -56,38 +66,43 @@ const Index = props => {
   
   )
 }
+Index.getInitialProps = async () => {
+  const posts = await getPosts();
+  console.log(posts)
+  return { posts: posts }
+}
 
 export default Index
 
-export async function getStaticProps() {
-  const siteConfig = await import(`../data/config.json`)
-  //get posts & context from folder
-  const posts = (context => {
-    const keys = context.keys()
-    const values = keys.map(context)
+// export async function getStaticProps() {
+//   const siteConfig = await import(`../data/config.json`)
+//   //get posts & context from folder
+//   const posts = (context => {
+//     const keys = context.keys()
+//     const values = keys.map(context)
 
-    const data = keys.map((key, index) => {
-      // Create slug from filename
-      const slug = key
-        .replace(/^.*[\\\/]/, '')
-        .split('.')
-        .slice(0, -1)
-        .join('.')
-      const value = values[index]
-      // Parse yaml metadata & markdownbody in document
-      const document = matter(value.default)
-      return {
-        frontmatter: document.data,
-        markdownBody: document.content,
-        slug,
-      }
-    })
-    return data
-  })(require.context('../posts', true, /\.md$/))
+//     const data = keys.map((key, index) => {
+//       // Create slug from filename
+//       const slug = key
+//         .replace(/^.*[\\\/]/, '')
+//         .split('.')
+//         .slice(0, -1)
+//         .join('.')
+//       const value = values[index]
+//       // Parse yaml metadata & markdownbody in document
+//       const document = matter(value.default)
+//       return {
+//         frontmatter: document.data,
+//         markdownBody: document.content,
+//         slug,
+//       }
+//     })
+//     return data
+//   })(require.context('../posts', true, /\.md$/))
 
-  return {
-    props: {
-      allBlogs: posts,
-    },
-  }
-}
+//   return {
+//     props: {
+//       allBlogs: posts,
+//     },
+//   }
+// }

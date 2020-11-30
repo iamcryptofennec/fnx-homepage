@@ -1,4 +1,5 @@
 import Footer from '../components/Footer'
+import Tooltip from '../components/Tooltip'
 import DashboardItem from '../components/DashboardItem'
 import Section_1 from '../components/Section_1'
 import { useState, useEffect } from 'react'
@@ -96,6 +97,7 @@ export default function Dashboard() {
                 <h1 className="main-title">
                   Token Dashboard
                 </h1>
+
                 <div className="main-aside">
                   <p className="section-2-text"> <em><span className="section-2-opener">The FNX Token Dashboard </span></em>
                   <span  className="section-2-closer">shows live data about the FNX token and FinNexus Protocol for Options (FPO).</span> </p>
@@ -107,7 +109,6 @@ export default function Dashboard() {
             </div>
           </Section_1>
           <div className="dashboard_container">
-            <h1 className="dash_title">FNX Token</h1>
             <div className="dash_subsection dash_grid">
               {fnx_dashboard_elements}
             </div>

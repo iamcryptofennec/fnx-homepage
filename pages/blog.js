@@ -17,13 +17,13 @@ const Index = props => {
               </h1>
               <div className="mainContentsText_1">
               <ul>
-              {props.posts.map(post => (
+              {/* {props.posts.map(post => (
                 <li key={post.id}>
                   <Link href={`blog/[slug]`} as={`blog/${post.slug}`}>
                     <a>{post.title}</a>
                   </Link>
                 </li>
-              ))}
+              ))} */}
  
   </ul>
               </div>
@@ -66,11 +66,11 @@ const Index = props => {
   
   )
 }
-Index.getInitialProps = async () => {
-  const posts = await getPosts();
-  console.log(posts)
-  return { posts: posts }
-}
+// Index.getInitialProps = async () => {
+//   const posts = await getPosts();
+//   console.log(posts)
+//   return { posts: posts }
+// }
 
 export default Index
 

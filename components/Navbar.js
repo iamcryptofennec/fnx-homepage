@@ -55,9 +55,9 @@ export default function Navbar() {
                 <Link href="https://snapshot.page/#/finnexus">
                   <a  target="_blank" className="navbar-item">Snapshot (Ethereum)</a>
                 </Link>
-                {/* <Link href="https://snapshot.page/#/finnexus">
+                <Link href="https://vote.wandevs.org/#/">
                   <a  target="_blank" className="navbar-item">Snapshot (Wanchain)</a>
-                </Link> */}
+                </Link>
            
               </div>
             </div>

@@ -2,6 +2,7 @@ import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
 import Link from '../components/Link'
 import { getPosts } from '../api/posts';
+import moment from 'moment'
 
 const Index = props => {
   return (
@@ -14,16 +15,20 @@ const Index = props => {
         <div className="spacer_50">
         </div>
         <div className="dash_grid">
-          {props.posts.map(post => (
+          {props.posts.sort((post1, post2) => {post2.created_at - post1.created_at})
+          .map(post => (
             <div className="blogContainer" key={post.id}>
               <Link href={`blog/${post.slug}`}>
-                <a>
+                <a className="blog_link">
                   <img src={post.feature_image ? post.feature_image : "https://miro.medium.com/max/945/1*O4jCgJ3GWoHtMtZbi59yBQ.png"}></img>
                   <p className="postTitle">
                     {post.title}
                   </p>
-                  <p>
+                  <p className="excerpt">
                     {post.excerpt ? `${post.excerpt.slice(0, 100)}...` : "No content"}
+                  </p>
+                  <p className="details ">
+                  {post.primary_author.name ? post.primary_author.name : "FinNexus Team"} — {moment(post.published_at).format("MMMM Do YYYY")}
                   </p>
                 </a>
               </Link> 
@@ -37,6 +42,23 @@ const Index = props => {
         </Footer>
         <style jsx>
           {`
+            .details {
+              font-style: italic;
+              color: #8c8c8c;
+            }
+            .blog_link{
+              color: black;
+            }
+            .blog_link:hover{
+              color: black;
+            }
+            .postTitle {
+              font-size: 1.5rem;
+              margin-bottom: 7px;
+            }
+            .excerpt {
+              margin-bottom: 5px;
+            }
             h1 {
               font-size: 3rem;
               font-weight: 700;
@@ -44,9 +66,7 @@ const Index = props => {
             .spacer_50 {
               margin-bottom: 50px;
             }
-            .postTitle {
-              font-size: 1.5rem;
-            }
+            
             .blogContainer{
               padding: 20px;
             }
@@ -249,7 +269,11 @@ const Index = props => {
 }
 
 export const getStaticProps = async (context) => {
-  const posts = await getPosts();
+  let posts = await getPosts();
+
+  posts.forEach(post => {
+    console.log(post.published_at)
+  })
   return { props: { posts: posts }}
 }
 

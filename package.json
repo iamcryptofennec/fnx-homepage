@@ -23,6 +23,7 @@
     "highlight.js": "^10.3.2",
     "interweave": "^12.5.0",
     "medium-zoom": "^1.0.6",
+    "moment": "^2.29.1",
     "next": "9.5.3",
     "node-sass": "^4.14.1",
     "numeral": "^2.0.6",

@@ -40,7 +40,7 @@ export default function Navbar() {
             <Link href="/about">
               <a className="navbar-item">About</a>
             </Link>
-            <Link href="https://medium.com/finnexus">
+            <Link href="/blog">
               <a target="_blank" className="navbar-item">Blog</a>
             </Link>
             <Link href="/dashboard">

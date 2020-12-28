@@ -1,8 +1,9 @@
 // Import getSinglePost function
 import { getSinglePost } from '../../api/posts';
-import Section_1 from '../../components/Section_1'
-import Footer from '../../components/Footer'
+import Section_1 from '../../components/Section_1';
+import Footer from '../../components/Footer';
 import { getPosts } from '../../api/posts';
+import moment from 'moment'
 
 // PostPage page component
 const PostPage = (props) => {
@@ -14,8 +15,12 @@ const PostPage = (props) => {
           FinNexus Blog
         </h1>
       </Section_1>
+      <h1 className="mainTitle">
+          FinNexus Blog
+      </h1>
       <div className="blogContainer">
-        <h1 >{props.post === undefined ? "" : props.post.title}</h1>
+        <h2 className="postTitle">{props.post === undefined ? "" : props.post.title}</h2>
+        <h4 className="details">{props.post.primary_author.name ? props.post.primary_author.name : "FinNexus Team"} — {moment(props.post.published_at).format("MMMM Do YYYY")}</h4>
         <div className="blogSubContainer" dangerouslySetInnerHTML={{ __html: props.post === undefined ? "" : props.post.html}} />
       </div>
       <div className="spacer_50">
@@ -25,6 +30,16 @@ const PostPage = (props) => {
       
       <style jsx>
           {`
+          .postTitle {
+            text-align: center;
+            line-height: 3rem;
+          }
+          .details {
+            text-align: center;
+            margin-bottom: 15px;
+            font-style: italic;
+            color: #8c8c8c;
+          }
           .spacer_50 {
             margin: 50px 0;
           }
@@ -40,6 +55,11 @@ const PostPage = (props) => {
             font-size: 1.8rem;
             font-weight: 700;
           }
+          h4 {
+            font-size: 1.4rem;
+            font-weight: 500;
+          }
+      
           .blogContainer {
             width: 50%;
           }
@@ -147,7 +167,6 @@ export const getStaticProps = async (context) => {
 export async function getStaticPaths() {
   const posts = await getPosts();
   const paths = posts.map(post => `/blog/${post.slug}`)
-  console.log(paths)
   return {
     paths: paths,
     fallback: true,

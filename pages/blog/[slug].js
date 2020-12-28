@@ -20,7 +20,7 @@ const PostPage = (props) => {
       </h1>
       <div className="blogContainer">
         <h2 className="postTitle">{props.post === undefined ? "" : props.post.title}</h2>
-        <h4 className="details">{ props.post ? props.post.primary_author.name : "FinNexus Team"} — {moment(props.post.published_at).format("MMMM Do YYYY")}</h4>
+        <h4 className="details">{ props.post ? props.post.primary_author.name : "FinNexus Team"} — {props.post ? moment(props.post.published_at).format("MMMM Do YYYY") : "Undated"}</h4>
         <div className="blogSubContainer" dangerouslySetInnerHTML={{ __html: props.post === undefined ? "" : props.post.html}} />
       </div>
       <div className="spacer_50">

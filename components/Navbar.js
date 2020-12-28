@@ -102,6 +102,7 @@ export default function Navbar(props) {
               height: 70px;
               z-index: 10;
               background-color: ${props.background_color};
+              padding-top:20px;
             }
             .navbar-item img {
               width: 140px;
@@ -212,7 +213,7 @@ export default function Navbar(props) {
               display: block;
               width: 100%;
               position: absolute;  
-              top: -600px;
+              top: -800px;
               pointer-events: none;
             }
             .logo {

@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+
 import Link from '../components/Link'
 import AOS from 'aos'
 import {useEffect} from 'react'
@@ -22,6 +24,8 @@ export default function Home() {
       </Head>
       <div className="sizeRestrictor">
         <main>
+        <Navbar background_color="#224099"/>
+
           <Section_1 background_color="#224099">
             <div className="mainContents">
               <div className="main_text_container">

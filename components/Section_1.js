@@ -3,9 +3,8 @@ import Navbar from './Navbar'
 export default function Section_1(props) {
   
     return (
-        <div>
+        <div className="section_1_container">
           <header className="section_1">
-            <Navbar />
             {props.children}
           </header>
         <style jsx>{` 
@@ -35,8 +34,11 @@ export default function Section_1(props) {
 
           .section_1 {
             margin-bottom: 60px;
+            z-index: 1;
           }
-       
+          .section_1_container {
+            z-index: 1;
+          }
           @media (min-width: 1700px) {
             .section_1 {
               border-radius: ${props.is_blog_main ? "0" : "0 0 200px 200px"};

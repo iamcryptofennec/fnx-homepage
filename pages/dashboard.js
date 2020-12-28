@@ -1,6 +1,7 @@
 import Footer from '../components/Footer'
 import Tooltip from '../components/Tooltip'
 import DashboardItem from '../components/DashboardItem'
+import Navbar from '../components/Navbar'
 import Section_1 from '../components/Section_1'
 import { useState, useEffect } from 'react'
 import fetch from 'node-fetch'
@@ -91,6 +92,7 @@ export default function Dashboard() {
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
+          <Navbar background_color="#9A5EA4"/>
           <Section_1 is_dashboard={true} background_color="#9A5EA4">
             <div className="main-contents">
               <div className="main_text_container">

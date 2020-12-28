@@ -1,12 +1,15 @@
 import Footer from '../components/Footer'
 import Section_1 from '../components/Section_1'
 import TeamMember from '../components/TeamMember'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
+          <Navbar background_color="#9A5EA4"/>
+
           <Section_1 background_color="#9A5EA4">
             <div className="main-contents">
               <div className="main_text_container">

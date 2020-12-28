@@ -1,13 +1,16 @@
 import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import Link from '../components/Link'
 import { getPosts } from '../api/posts';
 import moment from 'moment'
 
 const Index = props => {
   return (
-      <section>
+      <section className="mainSection">
+        <Navbar is_blog_main={true} background_color="#224099"/>
         <Section_1 is_blog_main={true} background_color="#224099">
+       
           <h1 className="mainTitle">
             FinNexus Blog
           </h1>
@@ -42,6 +45,9 @@ const Index = props => {
         </Footer>
         <style jsx>
           {`
+            .mainSection {
+              z-index: 1;
+            }
             .details {
               font-style: italic;
               color: #8c8c8c;
@@ -69,12 +75,13 @@ const Index = props => {
             
             .blogContainer{
               padding: 20px;
+              z-index: 1;
             }
             .blog_list_container {
               margin-bottom: 50px;
             }
             .mainTitle {
-              line-height: 40px; 
+              line-height: 120px; 
               font-size: 35px;
               text-align: center;
             }
@@ -104,6 +111,7 @@ const Index = props => {
               align-items: center;
               margin: auto;
               width: 1200px;
+              z-index: 1;
             }
             
             .full_width {

@@ -3,7 +3,7 @@ import Link from './Link.js'
 import { useRouter } from 'next/router'
 
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [menu, setMenu] = useState(0);
   const handleMenuClick = () => {
     if (menu === 1) return setMenu(0)
@@ -93,14 +93,15 @@ export default function Navbar() {
             .selected {
               text-decoration: underline;
               font-weight: 700;
-              transform: scale(1.05);
             }
             .navbar * {
               z-index: 10;
             }
             .navbar-container {
-              margin-top: 10px;
+              margin-top: 0px;
               height: 70px;
+              z-index: 10;
+              background-color: ${props.background_color};
             }
             .navbar-item img {
               width: 140px;
@@ -125,8 +126,16 @@ export default function Navbar() {
               margin: 0;
               padding: 0;
             }
+
+            .navbar-container {
+              width: ${props.is_blog_main ? "100%" : "80%"};
+              margin: auto;
+            }
       
           @media (min-width: 1700px) {
+            .navbar-container {
+              width: ${props.is_blog_main ? "100%" : "80%"}
+            }
             .navbar {
               width: 1000px;
               margin: auto;
@@ -137,16 +146,33 @@ export default function Navbar() {
           }
   
           @media (min-width: 1200px) and (max-width: 1700px) {
-            
+            .navbar-container {
+              width: ${props.is_blog_main ? "100%" : "95%"};
+            }
             .navbar {
               width: 900px;
               margin: auto;
             }
               
           }
+
+          @media (min-width: 700px) and (max-width: 1200px) {
+            .navbar-container {
+              width: 100%;
+
+              min-width: 00px;
+
+            }
+             
+           
+          }
          
 
           @media (max-width: 800px) {
+            .navbar-container {
+              width: 100%;
+              min-width: 00px;
+            }
             .navbar {
               width: 90%;
             }

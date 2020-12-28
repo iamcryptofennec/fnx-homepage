@@ -2,6 +2,7 @@
 import { getSinglePost } from '../../api/posts';
 import Section_1 from '../../components/Section_1'
 import Footer from '../../components/Footer'
+import { getPosts } from '../../api/posts';
 
 // PostPage page component
 const PostPage = (props) => {
@@ -144,18 +145,11 @@ export const getStaticProps = async (context) => {
 
 
 export async function getStaticPaths() {
+  const posts = await getPosts();
+  const paths = posts.map(post => `/blog/${post.slug}`)
+  console.log(paths)
   return {
-    paths: [
-      // String variant:
-      '/blog/first-post',
-      '/blog/welcome',
-      '/blog/the-editor',
-      '/blog/publishing-options',
-      '/blog/admin-settings',
-      '/blog/organising-content',
-      '/blog/apps-integrations',
-      '/blog/themes'
-    ],
+    paths: paths,
     fallback: true,
   }
 }

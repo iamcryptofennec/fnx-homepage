@@ -152,7 +152,7 @@ export async function getStaticPaths() {
       '/blog/the-editor',
       '/blog/publishing-options',
       '/blog/admin-settings',
-      '/blog/organsing-content',
+      '/blog/organising-content',
       '/blog/apps-integrations',
       '/blog/themes'
     ],

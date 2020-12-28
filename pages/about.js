@@ -1,10 +1,6 @@
 import Footer from '../components/Footer'
 import Section_1 from '../components/Section_1'
 import TeamMember from '../components/TeamMember'
-import PartnerCarousel from '../components/PartnerCarousel'
-import ExchangesCarousel from '../components/ExchangesCarousel'
- 
-
 
 export default function Home() {
   return (
@@ -464,10 +460,7 @@ export default function Home() {
             width: 1000px;
             font-size: 40px;
           }     
-          .carousel-container {
-            padding-bottom: 3rem;
-            width: 1000px;
-          }   
+          
           .team-section {
             padding-bottom: 50px;
           }
@@ -569,10 +562,7 @@ export default function Home() {
             width: 1000px;
             font-size: 40px;
           }     
-          .carousel-container {
-            padding-bottom: 3rem;
-            width: 1000px;
-          }   
+         
        }   
 
        

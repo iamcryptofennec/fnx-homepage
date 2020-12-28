@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import Link from 'next/link'
+import Link from './Link.js'
+import { useRouter } from 'next/router'
+
 
 export default function Navbar() {
   const [menu, setMenu] = useState(0);
@@ -35,13 +37,13 @@ export default function Navbar() {
             <Link href="https://www.docs.finnexus.io/">
               <a  target="_blank" className="navbar-item">Docs</a>
             </Link>  
-            <Link href="about">
+            <Link href="/about">
               <a className="navbar-item">About</a>
             </Link>
             <Link href="https://medium.com/finnexus">
-              <a className="navbar-item">Blog</a>
+              <a target="_blank" className="navbar-item">Blog</a>
             </Link>
-            <Link href="dashboard">
+            <Link href="/dashboard">
               <a className="navbar-item">Dashboard</a>
             </Link>
             <div className="navbar-item has-dropdown is-hoverable">
@@ -87,6 +89,12 @@ export default function Navbar() {
 
 
       <style jsx>{`
+
+            .selected {
+              text-decoration: underline;
+              font-weight: 700;
+              transform: scale(1.05);
+            }
             .navbar * {
               z-index: 10;
             }

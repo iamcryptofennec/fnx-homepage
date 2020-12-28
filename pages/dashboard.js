@@ -91,7 +91,7 @@ export default function Dashboard() {
     <div className="appContainer">
       <div className="sizeRestrictor">
         <main>
-          <Section_1 page="dashboard" background_color="#9A5EA4">
+          <Section_1 is_dashboard={true} background_color="#9A5EA4">
             <div className="main-contents">
               <div className="main_text_container">
                 <h1 className="main-title">

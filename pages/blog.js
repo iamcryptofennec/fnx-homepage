@@ -1,64 +1,245 @@
-import matter from 'gray-matter'
-import BlogList from '../components/BlogList'
 import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
-import Link from 'next/link'
+import Link from '../components/Link'
 import { getPosts } from '../api/posts';
 
 const Index = props => {
   return (
-  
       <section>
-        <Section_1 page="blog_main" background_color="#9A5EA4">
-          <div className="mainContents">
-            <div className="main_text_container">
-              <h1 className="mainTitle">
-                Welcome to the Official FinNexus Blog
-              </h1>
-              <div className="mainContentsText_1">
-              <ul>
-              {/* {props.posts.map(post => (
-                <li key={post.id}>
-                  <Link href={`blog/[slug]`} as={`blog/${post.slug}`}>
-                    <a>{post.title}</a>
-                  </Link>
-                </li>
-              ))} */}
- 
-  </ul>
-              </div>
-            </div>
-          </div>
+        <Section_1 is_blog_main={true} background_color="#224099">
+          <h1 className="mainTitle">
+            FinNexus Blog
+          </h1>
         </Section_1>
-        {/* <div className="blog_list_container">
-          <BlogList allBlogs={props.allBlogs} />
-        </div> */}
-          
+        <div className="spacer_50">
+        </div>
+        <div className="dash_grid">
+          {props.posts.map(post => (
+            <div className="blogContainer" key={post.id}>
+              <Link href={`blog/${post.slug}`}>
+                <a>
+                  <img src={post.feature_image ? post.feature_image : "https://miro.medium.com/max/945/1*O4jCgJ3GWoHtMtZbi59yBQ.png"}></img>
+                  <p className="postTitle">
+                    {post.title}
+                  </p>
+                  <p>
+                    {post.excerpt ? `${post.excerpt.slice(0, 100)}...` : "No content"}
+                  </p>
+                </a>
+              </Link> 
+            </div>
+          ))}
+        </div>
+        <div className="spacer_50">
+        </div>
         <Footer>
           
         </Footer>
         <style jsx>
-        {`
-          .blog_list_container {
-            margin-bottom: 50px;
+          {`
+            h1 {
+              font-size: 3rem;
+              font-weight: 700;
+            }
+            .spacer_50 {
+              margin-bottom: 50px;
+            }
+            .postTitle {
+              font-size: 1.5rem;
+            }
+            .blogContainer{
+              padding: 20px;
+            }
+            .blog_list_container {
+              margin-bottom: 50px;
+            }
+            .mainTitle {
+              line-height: 40px; 
+              font-size: 35px;
+              text-align: center;
+            }
+            .copyImage {
+              width: 15px;
+              height: 15px;
+              margin-left: 5px;
+            }
+            .copy:hover {
+              cursor: pointer;
+              text-decoration: underline;
+              text-decoration-style: dotted;
+            }
+            .dash_title {
+              font-size: 48px;
+              font-weight: 700;
+              margin: 30px auto;
+              width: 1200px;
+            }
+            .small_title {
+              font-size: 32px;
+            }
+            .dash_grid {
+              display: grid;
+              grid-template-columns: repeat(3, 33%);
+              justify-items: center;
+              align-items: center;
+              margin: auto;
+              width: 1200px;
+            }
+            
+            .full_width {
+              width: 100%;
+              background-color: pink;
+            }
+
+            .dashboard_container{
+              margin: 50px auto;
+              width: 1000px;
+            }
+            .fnx_circle {
+              -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+              -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+              box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+              border-radius: 100%;
+              border: 10px solid white;
+              width: 300px;
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              left: 580px;
+              bottom: 250px; 
+              position: relative;
+            }
+            .fnx_circle_content {
+              box-sizing: border-box;
+              border-radius: 100%;
+              border: 1px solid #A2D9DA;
+              width: 220px;
+              height: 220px;
+              line-height: 220px;
+              text-align: center;
+              font-size: 120px;
+              font-weight: 700;
+            }
+            .sub-section-header {
+              color: #9F66A9;   
+            }
+            main {
+              width: 100%;
+              margin: auto;
+              overflow: visible
+            }    
+            .appContainer {
+              overflow: hidden
+            }      
+            .section-2-closer {
+              font-size: 22px;
+            }
+            .section-2-opener {
+              font-size: 35px;
+              font-weight: 700;
+            }
+          @media (min-width: 1700px) {
+            .dash_title {
+              width: 1200px;
+            }
+            .fnx_circle {
+              width: 300px;
+              height: 300px;
+            }
+            .dashboard_container{
+              margin: 50px auto;
+              width: 1000px;
+            }
+          
           }
-          .main_text_container {
-            width: 600px;
-            margin: auto;
+            @media (min-width: 1200px) and (max-width: 1700px) {            
+              .dash_grid {
+                width: 1000px;
+              }
+              .section-2-closer {
+                font-size: 22px;
+              }
+              .section-2-opener {
+                font-size: 35px;
+                font-weight: 700;
+              }
+              
+              .dashboard_container{
+                margin: 50px auto;
+                width: 1000px;
+              }
+            }
+
+            @media (min-width: 800px) and (max-width: 1200px) {
+              .dash_grid {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                justify-items: center;
+                align-items: center;
+                width: 100%;
+              }
+              .blogContainer{
+                padding: 20px 10%;
+              }
+              .dash_title {
+                min-width: 770px;
+                width: 80%;
+                margin: 30px auto;
+              }
+              
+              .dashboard_container{
+                margin: 50 px auto;
+                width: 800px;
+                min-width: 70%;
+              }
+              .section-2-closer {
+                font-size: 22px;
+              }
+              .section-2-opener {
+                font-size: 35px;
+                font-weight: 700;
+              }
+              .fnx_circle {
+                width: 250px;
+                height: 250px;
+                left: 380px;
+                bottom: 250px; 
+              }
+              .fnx_circle_content {
+                width: 200px;
+                height: 200px;
+                font-size: 110px;
+                line-height: 200px;
+              }
+          }   
+
+          @media (max-width: 800px){
+            .main_text_container {
+              margin: auto;
+            }
+            .dash_grid {
+              display: grid;
+              grid-template-columns: repeat(1, 100%);
+              justify-items: center;
+              align-items: center;
+              width: 100%;
+            }
+            .blogContainer{
+              padding: 20px 15%;
+            }
+            .dash_title {
+              max-width: 770px;
+              width: 95%;
+              margin: 30px auto;
+            }
+            .dashboard_container{
+              margin: 50 px auto;
+              width: 95%;
+            }
+             
           }
-          .mainContentsText_1 {
-            text-align: justify;
-            text-justify: auto;
-          }
-          .mainContents {
-            margin: auto;
-            width: 1000px;
-            margin-top: 0px;
-          }
-          .mainTitle {
-            line-height: 150px; 
-            font-size: 45px;
-           }
         `}
       </style>
       
@@ -66,43 +247,13 @@ const Index = props => {
   
   )
 }
-// Index.getInitialProps = async () => {
-//   const posts = await getPosts();
-//   console.log(posts)
-//   return { posts: posts }
-// }
+
+export const getStaticProps = async (context) => {
+  const posts = await getPosts();
+  return { props: { posts: posts }}
+}
+
+
 
 export default Index
 
-// export async function getStaticProps() {
-//   const siteConfig = await import(`../data/config.json`)
-//   //get posts & context from folder
-//   const posts = (context => {
-//     const keys = context.keys()
-//     const values = keys.map(context)
-
-//     const data = keys.map((key, index) => {
-//       // Create slug from filename
-//       const slug = key
-//         .replace(/^.*[\\\/]/, '')
-//         .split('.')
-//         .slice(0, -1)
-//         .join('.')
-//       const value = values[index]
-//       // Parse yaml metadata & markdownbody in document
-//       const document = matter(value.default)
-//       return {
-//         frontmatter: document.data,
-//         markdownBody: document.content,
-//         slug,
-//       }
-//     })
-//     return data
-//   })(require.context('../posts', true, /\.md$/))
-
-//   return {
-//     props: {
-//       allBlogs: posts,
-//     },
-//   }
-// }

@@ -4,7 +4,7 @@ export default function Section_1(props) {
   
     return (
         <div>
-         <header className="section_1">
+          <header className="section_1">
             <Navbar />
             {props.children}
           </header>
@@ -33,19 +33,22 @@ export default function Section_1(props) {
             scrollbar-width: none;
           }
 
+          .section_1 {
+            margin-bottom: 60px;
+          }
        
           @media (min-width: 1700px) {
             .section_1 {
-              border-radius: ${props.is_blog_main ? " 0 0 100px 100px" : "0 0 200px 200px"};
+              border-radius: ${props.is_blog_main ? "0" : "0 0 200px 200px"};
              
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
-              height: ${props.is_blog_main ? "250px" : "500px"};
+              height: ${props.is_blog_main ? "150px" : "500px"};
               color: #F1F1F2;
               overflow: hidden;
-  
-              width: 80%;
+              margin-bottom: 60px;
+              width: ${props.is_blog_main ? "100%" : "80%"}
             }
           
           
@@ -54,15 +57,15 @@ export default function Section_1(props) {
           @media (min-width: 1200px) and (max-width: 1700px) {
             
             .section_1 {
-              border-radius: ${props.is_blog_main ? " 0 0 100px 100px" : "0 0 200px 200px"};
+              border-radius: ${props.is_blog_main ? "0" : "0 0 200px 200px"};
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
-              margin-bottom: 60px;
               color: #F1F1F2;
               overflow: hidden;
-              height: ${props.is_blog_main ? "250px" : "550px"};
-              width: 95%;
+              height: ${props.is_blog_main ? "150px" : "550px"};
+              width: ${props.is_blog_main ? "100%" : "95%"};
+              margin-bottom: 60px;
             }
           
            
@@ -71,8 +74,8 @@ export default function Section_1(props) {
   
           @media (min-width: 700px) and (max-width: 1200px) {
             .section_1 {
-              height: ${props.is_blog_main ? "250px" : "550px"};;
-              border-radius: 0 0 100px 100px;
+              height: ${props.is_blog_main ? "150px" : "550px"};;
+              border-radius: ${props.is_blog_main ? "0" : " 0 0 100px 100px"};
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
@@ -80,6 +83,7 @@ export default function Section_1(props) {
               color: #F1F1F2;
               overflow: hidden;
               min-width: 00px;
+              margin-bottom: 60px;
             }
              
            
@@ -87,11 +91,10 @@ export default function Section_1(props) {
   
           @media (max-width: 800px) {
            
-         
             .section_1 {
-              height: ${props.page === "blog_main" ? "250px" : "580px"};
-              height: ${props.page === "dashboard" ? "350px" : "580px"};
-              border-radius: 0 0 70px 70px;
+              height: ${props.is_dashboard ? "350px" : "580px"};
+              height: ${props.is_blog_main ? "150px" : "580px"};
+              border-radius: ${props.is_blog_main ? "0" : "0 0 70px 70px"};
               background-color: ${props.background_color};
               background-size: 100% 800px;
               margin: auto;
@@ -99,6 +102,7 @@ export default function Section_1(props) {
               color: #F1F1F2;
               overflow: hidden;
               min-width: 00px;
+              margin-bottom: 60px;
             }
           
           }

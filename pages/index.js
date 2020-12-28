@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Section_1 from '../components/Section_1'
 import Footer from '../components/Footer'
-import Link from 'next/link'
+import Link from '../components/Link'
 import AOS from 'aos'
 import {useEffect} from 'react'
 import 'aos/dist/aos.css';

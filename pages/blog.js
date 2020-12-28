@@ -20,7 +20,7 @@ const Index = props => {
             <div className="blogContainer" key={post.id}>
               <Link href={`blog/${post.slug}`}>
                 <a className="blog_link">
-                  <img src={post.feature_image ? post.feature_image : "https://miro.medium.com/max/945/1*O4jCgJ3GWoHtMtZbi59yBQ.png"}></img>
+                  <img src={post.feature_image ? post.feature_image : "https://miro.medium.com/max/1050/1*0XmnhJNjrN_2-fH3ayIyeA.png"}></img>
                   <p className="postTitle">
                     {post.title}
                   </p>

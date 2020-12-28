@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 
 export default ({ href, children }) => {
   const router = useRouter()
-  console.log(router.pathname.slice(0,5))
   let className = children.props.className || ''
   if (router.pathname === href || (href === "/blog" && router.pathname.slice(0,5) === "/blog")) {
     className = `${className} selected`

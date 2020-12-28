@@ -131,11 +131,33 @@ const PostPage = (props) => {
   )
 }
 
-// Pass the page slug over to the "getSinglePost" function
-// In turn passing it to the posts.read() to query the Ghost Content API
-PostPage.getInitialProps = async (params) => {
-  const post = await getSinglePost(params.query.slug);
-  return { post: post }
-};
+ 
+// PostPage.getInitialProps = async (params) => {
+//   const post = await getSinglePost(params.query.slug);
+//   return { post: post }
+// };
+
+export const getStaticProps = async (context) => {
+  const post = await getSinglePost(context.params.slug);
+  return {props: { post: post }}
+}
+
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      // String variant:
+      '/blog/first-post',
+      '/blog/welcome',
+      '/blog/the-editor',
+      '/blog/publishing-options',
+      '/blog/admin-settings',
+      '/blog/organzing-content',
+      '/blog/apps-integrations',
+      '/blog/themes'
+    ],
+    fallback: true,
+  }
+}
 
 export default PostPage

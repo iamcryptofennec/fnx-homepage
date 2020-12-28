@@ -41,7 +41,7 @@ export default function Navbar() {
               <a className="navbar-item">About</a>
             </Link>
             <Link href="/blog">
-              <a target="_blank" className="navbar-item">Blog</a>
+              <a className="navbar-item">Blog</a>
             </Link>
             <Link href="/dashboard">
               <a className="navbar-item">Dashboard</a>
